@@ -1,0 +1,33 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[autostyle, italian=quotes]{csquotes}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Daniele Gilio}
+\title{Titanic Logistic Regression}
+\begin{document}
+\maketitle
+\section{Introduction}
+In this assignment we were asked to train a logistic regression model in order to predict the survival probability given the following features:
+\begin{itemize}
+\item Class
+\item Sex
+\item Age
+\item Siblings/Spouses on board
+\item Parents and Children on board
+\item Passenger Fare
+\end{itemize}
+The labels associated with those features are binary values indicating whether or not a given passenger survived the disaster. The Training Set is comprised of $710$ samples whereas the Test Set is made of $177$.
+\section{Data Analysis}
+The first thing we did was an analysis of the dataset in order to have an idea about how they are distributed and what features might be the most relevant. This was done by plotting the features pairwise and see if a possible decision boundary could be identified. This initial process hinted that the most influential features might be Class and Sex, as we can see in Figure (). To further investigate this we plotted the \enquote{empirical} chance of survival, which is basically the relative frequency, against the classes we spotted. The graphs in Figure() tell us that we might be on the right track.
+\section{Training}
+The training was performed for $2 \cdot 10^5$ steps and we used a Learning Rate equal to $0.005$. Increasing the Learning Rate lead to oscillating values in the loss functions whereas decreasing it worsened the final training loss value and consequently the training accuracy. The plots in Figure() show the both the training and the test loss and their relative accuracy. As we can see it may be enough to perform between $5 \cdot 10^4$ and $7.5 \cdot 10^4$ steps to reach convergence as these values are the ones in which the test loss (and the test accuracy) settle on a constant value. The final values for loss functions and accuracies can be found in Table(). 
+\section{Model Analysis and Evaluation}
+If we take a look at the weights obtained during training we can see that our first intuition was right. Sex is the most influential class, followed by Class, Siblings/Spouses, Parents and Children, Age and Passenger Fare. We can conclude that the people which were most likely to survive were women travelling alone in first class. The opposite is also true: men in third class travelling with other people were most likely to die. A series of $10^5$ \enquote{educated guesses} proves our theory and enlightens the fact the \enquote{Women and Children First} is not a fictional saying but a real world rule of navigation.
+\section{Final Thoughts}
+Plotting the contour of decision bound in the Class vs. Sex graph (Figure ) tells us that our model is doing a good job in recognising those two classes as the most important ones. In our opinion the model is not overfitting the data since the test accuracy is very close to the training one. Plotting the contour of the decision bound for Class vs. Siblings/Spouses is, on the other hand, shows the limitations of the model. This is probably due to underfitting, the bias value is rather high compared to the second most influential feature.   
+\end{document}
