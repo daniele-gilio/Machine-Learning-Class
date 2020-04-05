@@ -60,7 +60,7 @@ Accuracy & 80.281   & 79.096 \\ \hline
 \label{tab:loss_acc}
 \end{table}
 \section{Model Analysis and Evaluation}
-If we take a look at the weights in Table \ref{tab:1}, obtained during training, we can see that our first intuition was right. Gender is the most influential feature, followed by Class, Siblings/Spouses, Parents and Children, Age and Passenger Fare. We can conclude that the people which were most likely to survive were women travelling alone in first class. The opposite is also true: men in third class travelling with other people were most likely to die. A series of $10^5$ \enquote{educated guesses} (Figure \ref{fig:ed_guess}) proves our theory and enlightens the fact the \enquote{Women and Children First} is not a fictional saying but a real world rule of navigation.
+If we take a look at the weights in Table \ref{tab:1}, obtained during training, we can see that our first intuition was right. Gender is the most influential feature, followed by Class, Siblings/Spouses, Parents and Children, Age and Passenger Fare. We can conclude that the people which were most likely to survive were women travelling alone in first class. The opposite is also true: men in third class travelling with other people were most likely to die. A series of $10^5$ \enquote{Educated Guesses} (Figure \ref{fig:ed_guess}) proves our theory and enlightens the fact the \enquote{Women and Children First} is not a fictional saying but a real world rule of navigation. Given these premises we are glad we were not on the ship since the model predicts a probability of $27.77 \%$ in a best case scenario ($1^{st}$ Class) and a $1.92 \%$ int the worst one ($3^{rd}$ Class).
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.5\linewidth]{ed_guess.png}
