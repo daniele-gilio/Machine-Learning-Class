@@ -1,18 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 
 plt.rcParams["savefig.format"]="png"
 #plt.rcParams['figure.figsize'] = [16,9]
 np.random.seed(0)
-
-
-# In[3]:
 
 
 #Import Data
@@ -47,8 +38,7 @@ for i in range(cl.size):
         a[1]+=1
     elif cl[i]==3 and surv[i]==1:
         a[2]+=1
-        
-#a[2]=cl.size-a[0]-a[1]
+
 labc=[1,2,3]
 labs=["Male", "Female"]
 a/=a.sum()/100
@@ -74,7 +64,7 @@ plt.clf()
 #Plot Data Correlation
 for i in range(6):
     for j in range(i+1,6):
-        print(i,j)
+        #print(i,j)
         plt.title(names[i] + " vs. " + names[j])
         plt.xlabel(names[i])
         plt.ylabel(names[j])
@@ -83,9 +73,6 @@ for i in range(6):
         #plt.show()
         plt.savefig("images/"+names[i] + " vs. " + names[j]+".png")
         plt.clf()
-
-
-# In[4]:
 
 
 #Logistic Regression Functions
@@ -108,7 +95,7 @@ def logreg_train(x, y, epochs, lr,l, x_t,y_t):
     w=np.zeros(n)
     b=0
     n=0
-    print("Steps  Loss  Accuracy")
+    print("Steps  Loss   Test_Loss Accuracy Test_Accuracy")
     for step in range(epochs):
         p=logreg_inference(x,w,b)
         s_loss[step]=cross_entropy(p,y)
@@ -119,13 +106,12 @@ def logreg_train(x, y, epochs, lr,l, x_t,y_t):
         s_tloss[step]= cross_entropy(pt,y_t)
         s_tacc[step]= np.asarray(tpred==y_t).mean()
         if step%10000==0:
-            #print(step, loss)
             print(step, s_loss[step], s_tloss[step], s_acc[step]*100, s_tacc[step]*100)
         grad_b=(p-y).mean()#+2*l*(b)
         grad_w=(x.T@(p-y))/m+2*l*(w)
         b-=lr*grad_b
         w-=lr*grad_w
-    
+
     np.save("loss", s_loss)
     np.save("loss_test", s_tloss)
     np.save("accuracy", s_acc)
@@ -139,8 +125,6 @@ x_t=test_data[:,:6]
 y_t=test_data[:,6]
 
 
-# In[5]:
-
 
 #Training
 w,b = logreg_train(x,y, int(2*1e5),0.001,0., x_t,y_t)
@@ -149,8 +133,6 @@ predictions=(p>0.5)
 accuracy=(predictions==y).mean()
 print("Training Set Accuracy: ", accuracy*100)
 
-
-# In[6]:
 
 
 s_loss=np.load("loss.npy")
@@ -181,15 +163,12 @@ plt.clf()
 #plt.show()
 
 
-# In[7]:
-
-
 #Results on the Training Set
 print(w,b)
 
 for i in range(6):
     for j in range(i+1,6):
-        print(i,j)
+        #print(i,j)
         plt.title(names[i] + " vs. " + names[j])
         plt.xlabel(names[i])
         plt.ylabel(names[j])
@@ -201,9 +180,6 @@ for i in range(6):
         #plt.show()
 
 
-# In[8]:
-
-
 #Guess a Survival Probability
 guess_data=np.zeros((1,6))
 
@@ -211,7 +187,7 @@ for i in range(5):
     guess_data[0][i]=np.random.randint(data[:,i].min(), data[:,i].max())
 
 guess_data[0][5]=(data[:,5].max()-data[:,5].min())*np.random.rand()+data[:,5].min()
-print(guess_data)
+#print(guess_data)
 
 prob_guess=logreg_inference(guess_data,w,b)
 print("Random Guess: ", prob_guess*100)
@@ -229,6 +205,7 @@ for i in range(edn):
     guess_data[0][1]=1
     for j in range(2,5):
         guess_data[0][j]=np.random.randint(data[:,j].min(), data[:,j].max())
+    guess_data[0][5]=(data[:,5].max()-data[:,5].min())*np.random.rand()+data[:,5].min()
     guess_data[0][3]=1
     ed_g[i]=logreg_inference(guess_data,w,b)
     guess_data[0][0]=3
@@ -262,10 +239,24 @@ plt.clf()
 #plt.show()
 prob_guess=logreg_inference(guess_data,w,b)
 print("Educated Guess: ",prob_guess*100)
+print(guess_data)
 
+#My personal guess
 
-# In[9]:
+guess_data[0][0]=3 #Class
+guess_data[0][1]=0 #Gender
+guess_data[0][2]=22 #Age
+guess_data[0][2]=1 #Siblings/Spouses
+guess_data[0][4]=2 #Parents/Children
+guess_data[0][5]=20 #Fare
 
+prob_guess=logreg_inference(guess_data,w,b)
+print("My Probability (Worst Case): ", prob_guess*100.)
+
+guess_data[0][0]=1 #Class
+guess_data[0][5]=300 #Fare
+prob_guess=logreg_inference(guess_data,w,b)
+print("My Probability (Best Case): ", prob_guess*100.)
 
 #Evaluate the model on test data
 p=logreg_inference(x_t,w,b)
@@ -275,7 +266,7 @@ print("Test Accuracy: ", accuracy*100)
 
 for i in range(6):
     for j in range(i+1,6):
-        print(i,j)
+        #print(i,j)
         plt.title(names[i] + " vs. " + names[j])
         plt.xlabel(names[i])
         plt.ylabel(names[j])
@@ -286,22 +277,3 @@ for i in range(6):
         plt.savefig("images/"+"test_bound_"+names[i] + " vs. " + names[j]+".png")
         plt.clf()
         #plt.show()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
