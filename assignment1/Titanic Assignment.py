@@ -69,6 +69,9 @@ for i in range(6):
         plt.xlabel(names[i])
         plt.ylabel(names[j])
         plt.scatter(data[:,i], data[:,j], c=data[:,6], alpha=0.5)
+        if(i==0 and j==1):
+            plt.plot(data[:,i], 0.4571*data[:,i]-0.5714, label="Possible Decision Bound", linestyle="--", c="r")
+            plt.legend()
         plt.grid(1)
         #plt.show()
         plt.savefig("images/"+names[i] + " vs. " + names[j]+".png")
