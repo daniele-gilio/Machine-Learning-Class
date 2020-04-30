@@ -1,0 +1,16 @@
+Large Movie Review Dataset v1.0
+
+Overview
+
+This dataset contains movie reviews along with their associated binary
+sentiment polarity labels (positive or negative). It is intended to
+serve as a benchmark for sentiment classification. This document
+outlines how the dataset was gathered, and how to use the files
+provided.
+
+The data set contains 50,000 reviews split evenly into 25k train,
+12.5k validation and 12.5k test sets. The overall distribution of
+labels is balanced (25k positive and 25k negative).
+
+The data set has been introduced in the paper: "Learning Word Vectors
+for Sentiment Analysis," by Andrew L. Maas et al., ACL 2011.
