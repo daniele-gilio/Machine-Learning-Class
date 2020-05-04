@@ -9,17 +9,16 @@ action
 actor
 actress
 actual
-ad
 adapt
 add
 admit
 adult
 adventur
-ag
 ago
 agre
 air
 alien
+aliv
 allow
 amaz
 america
@@ -38,6 +37,7 @@ appear
 appreci
 approach
 aren
+armi
 arriv
 art
 artist
@@ -53,7 +53,6 @@ audienc
 author
 averag
 avoid
-aw
 awai
 award
 awesom
@@ -85,6 +84,7 @@ bodi
 boi
 book
 bore
+boss
 bother
 box
 brain
@@ -101,7 +101,6 @@ build
 bunch
 burn
 busi
-call
 came
 camera
 camp
@@ -147,6 +146,7 @@ clever
 cliché
 close
 cloth
+club
 cold
 collect
 colleg
@@ -188,6 +188,7 @@ cover
 crap
 crazi
 creat
+creativ
 creatur
 credit
 creepi
@@ -212,6 +213,7 @@ david
 dead
 deal
 death
+decad
 decent
 decid
 deep
@@ -227,10 +229,8 @@ desir
 desper
 despit
 destroi
-detail
 detect
 develop
-di
 dialog
 dialogu
 did
@@ -244,7 +244,6 @@ disappoint
 discov
 disnei
 disturb
-do
 doctor
 documentari
 doe
@@ -256,6 +255,7 @@ doubt
 drag
 drama
 dramat
+draw
 dream
 dress
 drive
@@ -296,7 +296,6 @@ evil
 exactli
 exampl
 excel
-except
 excit
 excus
 execut
@@ -309,7 +308,6 @@ explor
 express
 extra
 extrem
-ey
 face
 fact
 fail
@@ -335,14 +333,13 @@ featur
 feel
 felt
 femal
+festiv
 fiction
 fight
 figur
-fill
 film
 filmmak
 final
-find
 fine
 finish
 fit
@@ -367,29 +364,29 @@ funni
 futur
 gai
 game
+gang
 gave
 gener
 genr
 genuin
 georg
 german
-get
 ghost
 girl
 girlfriend
-give
 given
-go
 god
 goe
 gone
 good
 gore
 got
+govern
 grade
 grant
 great
 greatest
+green
 group
 grow
 guess
@@ -406,7 +403,6 @@ hardli
 harri
 hate
 haunt
-have
 haven
 head
 hear
@@ -441,6 +437,7 @@ humor
 hurt
 husband
 idea
+idiot
 ignor
 imag
 imagin
@@ -461,7 +458,6 @@ intellig
 intend
 intens
 intent
-interest
 intrigu
 introduc
 involv
@@ -482,7 +478,6 @@ joke
 judg
 jump
 just
-keep
 kei
 kept
 kick
@@ -524,7 +519,9 @@ littl
 live
 local
 locat
+london
 long
+longer
 look
 lose
 lost
@@ -532,6 +529,7 @@ lot
 love
 lover
 low
+machin
 mad
 magic
 main
@@ -565,6 +563,7 @@ mess
 messag
 michael
 middl
+militari
 million
 mind
 minor
@@ -579,13 +578,12 @@ monster
 moral
 mother
 motion
-move
+motiv
 movi
 murder
 music
 myself
 mysteri
-name
 nation
 natur
 near
@@ -610,7 +608,6 @@ offic
 okai
 old
 older
-on
 open
 opinion
 opportun
@@ -620,12 +617,12 @@ oscar
 outsid
 overal
 pace
+page
 pai
 pain
 paint
 parent
 park
-part
 parti
 particular
 particularli
@@ -668,6 +665,7 @@ possibl
 post
 potenti
 power
+practic
 predict
 premis
 present
@@ -686,7 +684,6 @@ public
 pull
 pure
 purpos
-put
 qualiti
 question
 quickli
@@ -709,6 +706,7 @@ recent
 recommend
 record
 red
+redeem
 refer
 regard
 relat
@@ -735,6 +733,7 @@ ridicul
 right
 ring
 rip
+road
 robert
 rock
 role
@@ -768,7 +767,6 @@ search
 season
 second
 secret
-see
 seen
 self
 sens
@@ -786,10 +784,10 @@ shock
 shoot
 short
 shot
-show
 shown
 sick
 sign
+silent
 silli
 similar
 simpl
@@ -819,6 +817,7 @@ sort
 soul
 sound
 soundtrack
+south
 space
 speak
 special
@@ -838,6 +837,7 @@ steal
 step
 stereotyp
 steve
+stewart
 stick
 stop
 store
@@ -867,11 +867,11 @@ support
 suppos
 sure
 surpris
+surprisingli
 surviv
 suspect
 suspens
 sweet
-take
 taken
 tale
 talent
@@ -909,6 +909,7 @@ touch
 tough
 town
 track
+tradit
 trailer
 train
 trash
@@ -933,7 +934,6 @@ uniqu
 univers
 unless
 unlik
-us
 usual
 valu
 vampir
@@ -971,6 +971,7 @@ west
 western
 white
 wife
+wild
 william
 win
 wish
@@ -992,7 +993,6 @@ writer
 written
 wrong
 wrote
-ye
 year
 york
 young
