@@ -83,7 +83,7 @@ Plotting the contour of decision bound in the Class vs. Gender graph (Figure \re
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\linewidth]{conc.png}
-\caption{Class vs. Gender (Left) and Class vs. Siblings/Spouses (Right)}
+\caption{Class vs. Gender (Left) and Class vs. Siblings/Spouses (Right). The contours are plotted taking all the non displayed features equal to $0$; it is not ideal but it still works for the purposes of this report.}
 \label{fig:conc}
 \end{figure}
 The model might be improved by adding regularization. We tested both L1 and L2 regularizations with $\lambda=0.005, 0.01, 0.015$. L1 regularization decreased the accuracy by $\sim 0.6 \%$ with $\lambda=0.015$ whereas L2 increased it by $\sim 0.4 \%$. These slight variations in accuracy may indicate that the model is too simple for the problem given, testing a non-linear model might be a better way to represent the data.

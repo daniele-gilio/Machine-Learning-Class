@@ -1,0 +1,9 @@
+\BOOKMARK [1][-]{section.0.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.0.2}{Data Preprocessing}{}% 2
+\BOOKMARK [1][-]{section.0.3}{Classification}{}% 3
+\BOOKMARK [1][-]{section.0.4}{Classification Variants}{}% 4
+\BOOKMARK [1][-]{section.0.5}{Hyperparameters}{}% 5
+\BOOKMARK [2][-]{subsection.0.5.1}{Dictionary Size}{section.0.5}% 6
+\BOOKMARK [2][-]{subsection.0.5.2}{Learning Rate, Steps and Regularization \(SVM \046 LogReg\)}{section.0.5}% 7
+\BOOKMARK [1][-]{section.0.6}{Results Analysis}{}% 8
+\BOOKMARK [1][-]{section.0.7}{Conclusions}{}% 9
