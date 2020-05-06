@@ -1,6 +1,7 @@
 import numpy as np
 from collections import Counter as counter
 import glob
+from pathlib import Path
 
 ################################## Stemming Algorithm #############################################
 #!/usr/bin/env python
@@ -429,6 +430,7 @@ def build_dict(path, n, save, ignore_common=False, stemming=False):
     if save==False:
         return dic
     else:
+        Path("voc").mkdir(parents=True, exist_ok=True)
         f=open("voc/vocabulary_" + str(n)+".txt", "w")
         for w in [word for word, word_count in dic]:
             f.write(str(w)+"\n")
@@ -524,6 +526,7 @@ print("Starting Dictionary build...")
 build_dict(train_path,n,True, stemming=st, ignore_common=ic) #Build the dictionary
 print("Dictionary Built")
 #######Build BoWs#######
+Path("bows").mkdir(parents=True, exist_ok=True)
 print("Starting Bows build...")
 print("Building Train BoW")
 build_bow(train_path, True, train_name, stemming=st, size=n)
