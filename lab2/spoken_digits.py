@@ -579,8 +579,8 @@ for i in range(epochs):
         print("Train Accuracy: ", train_acc, "Validation Accuracy: ", val_acc)
 plt.ioff()
 
-labels=nn_multi.inference(x_test)[0]
-test_acc=(labels==y_test).mean()*100
+labels_multi=nn_multi.inference(x_test)[0]
+test_acc=(labels_multi==y_test).mean()*100
 print("Test Accuracy: ", test_acc)
 print()
 
@@ -638,7 +638,7 @@ test_acc=(labels==y_test).mean()*100
 print("Test Accuracy: ", test_acc)
 print()
 
-########### Create, fill and visualize confusion matrix #########
+########### Create, fill and visualize confusion matrices #########
 
 confusion_matrix=np.zeros((10,10))
 for i in range(len(labels)):
@@ -648,11 +648,29 @@ for i in range(10):
     if confusion_matrix[i, :].sum()!=0:
         confusion_matrix[i, :]/=confusion_matrix[i,:].sum() #<- Normalize each row of the confusion matrix
 
-plt.figure(figsize = (10,7))
+#plt.figure(figsize = (10,7))
 sn.heatmap(confusion_matrix, annot=True, cmap="coolwarm")
 plt.title("Single Layer Confusion Matrix")
 if image_save==True:
     plt.savefig("single_confusion_matrix.png")
+else:
+    plt.show()
+
+plt.clf()
+
+confusion_matrix=np.zeros((10,10))
+for i in range(len(labels)):
+    confusion_matrix[int(y_test[i])][int(labels_multi[i])]+=1
+
+for i in range(10):
+    if confusion_matrix[i, :].sum()!=0:
+        confusion_matrix[i, :]/=confusion_matrix[i,:].sum() #<- Normalize each row of the confusion matrix
+
+#plt.figure(figsize = (10,7))
+sn.heatmap(confusion_matrix, annot=True, cmap="coolwarm")
+plt.title("Multi Layer Confusion Matrix")
+if image_save==True:
+    plt.savefig("multi_confusion_matrix.png")
 else:
     plt.show()
 
