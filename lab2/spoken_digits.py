@@ -514,7 +514,7 @@ def test_norm(image_save=True):
 
 data_path="spoken-digits/"
 ext=".txt.gz"
-test=True #True if one wants to test all the available normalization techniques
+test=False #True if one wants to test all the available normalization techniques
 image_save=True
 visual=False
 
