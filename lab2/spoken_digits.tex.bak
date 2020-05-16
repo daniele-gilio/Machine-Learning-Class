@@ -23,8 +23,9 @@ In order to test our code we plotted spectrograms after we loaded the data and a
 \section{Neural Network}
 In order to experiment a bit with Neural Networks we built a Single-Layer Perceptron in which we have only an input layer and an output layer. As in the previous assignment we implemented a varying learning rate.
 \subsection{Architecture}
-After playing a bit with network architectures we settled on the following sequence $[1024, 256, 128, 32, 10]$.
-\subsection{Hyperparameters}
+After playing a bit with network architectures we settled on the following sequence $[1024, 256, 128, 32, 10]$, representing the width of each layer. Bigger models tended to overfit and took a long time to train, on the other hand tinier models were faster to train but less precise. We believe that optimal values are not very far from the ones we found.
+\subsection{Hyperparameters and Training}
+
 \subsection{Normalization Techniques}
 \section{Results}
 \section{Conclusions}
