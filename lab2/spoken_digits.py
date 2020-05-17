@@ -366,7 +366,7 @@ class MLP:
     @classmethod
     def load(cls, filename):
         """Create a new network from the data saved in the file."""
-        data = np.load(filename)
+        data = np.load(filename, allow_pickle=True)
         neurons = [w.shape[0] for w in data["weights"]]
         neurons.append(data["weights"][-1].shape[1])
         network = cls(neurons)
@@ -447,6 +447,8 @@ image_save=True
 visual=False
 lr0=1e-2
 batch_size=256
+save=True
+load_=True
 
 ##### Load Data #####
 train_data=np.loadtxt(data_path+"train"+ext)
@@ -470,6 +472,7 @@ print("Mean: ", x_train.mean())
 print("Standard Deviation: ", x_train.std())
 print()
 
+x_train_s, x_test_s, x_val_s=l2_normalization(x_train, x_test, x_val) #<- Normalize with L2
 x_train, x_test, x_val=meanvar_normalization(x_train, x_test, x_val) #<- Normalize with meanvar
 if visual==True:
     visualize(x_train,5,data_path)
@@ -481,83 +484,95 @@ print("Standard Deviation: ", x_train.std())
 print()
 
 
-##### Multi Layer Training and Evaluation #####
-nn_multi=MLP([1024, 256, 128, 32, 10])
-epochs=1000
-steps=len(x_train)//batch_size #Automatically adjust steps so that steps*batch_size is almost the number of samples
-train_accs=[]
-val_accs=[]
-ep_vec=[]
-plt.ion()
-for i in range(epochs):
-    nn_multi.train(x_train, y_train, lr0=lr0, lambda_=1e-5, momentum=0.99,
-                  steps=steps, batch=batch_size)
-    train_labels=nn_multi.inference(x_train)[0]
-    val_labels=nn_multi.inference(x_val)[0]
-    train_acc=(train_labels==y_train).mean()*100
-    val_acc=(val_labels==y_val).mean()*100
-    train_accs.append(train_acc)
-    val_accs.append(val_acc)
-    ep_vec.append(i)
-    plt.clf()
-    plt.plot(ep_vec, train_accs, label="Training Accuracy")
-    plt.plot(ep_vec, val_accs, label="Validation Accuracy")
-    plt.pause(0.005)
 
-    if (i+1)%10==0:
-        print("Train Accuracy: ", train_acc, "Validation Accuracy: ", val_acc)
-plt.ioff()
+if load_==False:
+    ##### Multi Layer Training and Evaluation #####
+    nn_multi=MLP([1024, 256, 128, 32, 10])
+    epochs=1000
+    steps=len(x_train)//batch_size #Automatically adjust steps so that steps*batch_size is almost the number of samples
+    train_accs=[]
+    val_accs=[]
+    ep_vec=[]
+    plt.ion()
+    for i in range(epochs):
+        nn_multi.train(x_train, y_train, lr0=lr0, lambda_=1e-5, momentum=0.99,
+                      steps=steps, batch=batch_size)
+        train_labels=nn_multi.inference(x_train)[0]
+        val_labels=nn_multi.inference(x_val)[0]
+        train_acc=(train_labels==y_train).mean()*100
+        val_acc=(val_labels==y_val).mean()*100
+        train_accs.append(train_acc)
+        val_accs.append(val_acc)
+        ep_vec.append(i)
+        plt.clf()
+        plt.plot(ep_vec, train_accs, label="Training Accuracy")
+        plt.plot(ep_vec, val_accs, label="Validation Accuracy")
+        plt.pause(0.005)
 
-labels_multi=nn_multi.inference(x_test)[0]
+        if (i+1)%10==0:
+            print("Train Accuracy: ", train_acc, "Validation Accuracy: ", val_acc)
+    plt.ioff()
+    if save==True:
+        nn_multi.save("nn_multi")
+
+
+
+    ######## Single Layer Perceptron Training ########
+
+    train_data=np.loadtxt(data_path+"train"+ext)
+    x_train=np.array(train_data[:,:-1])
+    y_train=np.array(train_data[:,-1].astype(np.int32))
+
+    val_data=np.loadtxt(data_path+"validation"+ext)
+    x_val=np.array(val_data[:,:-1])
+    y_val=np.array(val_data[:,-1].astype(np.int32))
+
+    test_data=np.loadtxt(data_path+"test"+ext)
+    x_test=np.array(test_data[:,:-1])
+    y_test=np.array(test_data[:,-1].astype(np.int32))
+
+    x_train, x_test, x_val=l2_normalization(x_train, x_test, x_val) #<- Normalize with L2
+
+    nn_single=MLP([1024, 10])
+    epochs=1000
+    batch_size=8
+    steps=len(x_train)//batch_size
+    train_accs=[]
+    val_accs=[]
+    ep_vec=[]
+    plt.ion()
+    for i in range(epochs):
+        nn_single.train(x_train, y_train, lr0=lr0, lambda_=1e-5, momentum=0.99,
+                      steps=steps, batch=batch_size)
+        train_labels=nn_single.inference(x_train)[0]
+        val_labels=nn_single.inference(x_val)[0]
+        train_acc=(train_labels==y_train).mean()*100
+        val_acc=(val_labels==y_val).mean()*100
+        train_accs.append(train_acc)
+        val_accs.append(val_acc)
+        ep_vec.append(i)
+        plt.clf()
+        plt.plot(ep_vec, train_accs, label="Training Accuracy")
+        plt.plot(ep_vec, val_accs, label="Validation Accuracy")
+        plt.pause(0.005)
+
+        if (i+1)%100==0:
+            print("Train Accuracy: ", train_acc, "Validation Accuracy: ", val_acc)
+    plt.ioff()
+
+    if save==True:
+        nn_single.save("nn_single")
+
+if load_==True:
+    nn_single=MLP.load("nn_single.npz")
+    nn_multi=MLP.load("nn_multi.npz")
+
+labels_multi, probs_multi=nn_multi.inference(x_test)
 test_acc=(labels_multi==y_test).mean()*100
 print("Test Accuracy: ", test_acc)
 print()
 
-
-######## Single Layer Perceptron Training ########
-
-train_data=np.loadtxt(data_path+"train"+ext)
-x_train=np.array(train_data[:,:-1])
-y_train=np.array(train_data[:,-1].astype(np.int32))
-
-val_data=np.loadtxt(data_path+"validation"+ext)
-x_val=np.array(val_data[:,:-1])
-y_val=np.array(val_data[:,-1].astype(np.int32))
-
-test_data=np.loadtxt(data_path+"test"+ext)
-x_test=np.array(test_data[:,:-1])
-y_test=np.array(test_data[:,-1].astype(np.int32))
-
-x_train, x_test, x_val=l2_normalization(x_train, x_test, x_val) #<- Normalize with L2
-
-nn_single=MLP([1024, 10])
-epochs=1000
-batch_size=8
-steps=len(x_train)//batch_size
-train_accs=[]
-val_accs=[]
-ep_vec=[]
-plt.ion()
-for i in range(epochs):
-    nn_single.train(x_train, y_train, lr0=lr0, lambda_=1e-5, momentum=0.99,
-                  steps=steps, batch=batch_size)
-    train_labels=nn_single.inference(x_train)[0]
-    val_labels=nn_single.inference(x_val)[0]
-    train_acc=(train_labels==y_train).mean()*100
-    val_acc=(val_labels==y_val).mean()*100
-    train_accs.append(train_acc)
-    val_accs.append(val_acc)
-    ep_vec.append(i)
-    plt.clf()
-    plt.plot(ep_vec, train_accs, label="Training Accuracy")
-    plt.plot(ep_vec, val_accs, label="Validation Accuracy")
-    plt.pause(0.005)
-
-    if (i+1)%100==0:
-        print("Train Accuracy: ", train_acc, "Validation Accuracy: ", val_acc)
-plt.ioff()
-
-labels=nn_single.inference(x_test)[0]
+labels=nn_single.inference(x_test_s)[0]
 test_acc=(labels==y_test).mean()*100
 print("Test Accuracy: ", test_acc)
 print()
@@ -582,9 +597,27 @@ else:
 
 plt.clf()
 
+####### Multi-Layer Confusion Matrix ###########
+mis_number=5
+misclass=np.zeros((4,len(y_test)))
 confusion_matrix=np.zeros((10,10))
 for i in range(len(labels)):
     confusion_matrix[int(y_test[i])][int(labels_multi[i])]+=1
+    if y_test[i]!=labels_multi[i]:
+        misclass[0][i]=i
+        misclass[1][i]=probs_multi[i].max()
+        misclass[2][i]=y_test[i]
+        misclass[3][i]=labels_multi[i]
+misclass=misclass.T
+misclass=misclass[np.argsort(misclass[:, 1])]
+f=open(data_path+"test-names.txt", "r")
+names=f.read().split()
+f.close()
+f=open("misclass.txt", "w")
+for i in range(mis_number):
+    print(names[int(misclass[-(i+1),0])], file=f)
+f.close()
+
 
 for i in range(10):
     if confusion_matrix[i, :].sum()!=0:
