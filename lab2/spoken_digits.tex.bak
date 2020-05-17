@@ -27,8 +27,22 @@ After playing a bit with network architectures we settled on the following seque
 \subsection{Hyperparameters and Training}
 In order to train our network we tested Gradient Descent, SGD and mini-batch SGD. The first one proved to be the smoothest but the slowest and hardware demanding, SGD was the fastest but the most erratic. Mini-batch SGD was a good compromise between the two. We obtained the best results with a batch size of $8$ for the Single-Layer Network and a size of $256$ for the Multi-Layer one. The number of steps was adjusted accordingly to the batch size, so that the product $\textit{batch\_size} \cdot \textit{steps} \simeq \textit{training\_samples}$. Both networks were trained for $1000$ epochs to ensure they reached convergence. The starting learning rate was set at $0.01$, the regularization coefficient and the momentum coefficient were left untouched, respectively at $10^{-5}$ and $0.99$. 
 \subsection{Normalization Techniques}
-We decided to further investigate normalization techniques and to do that we performed a training for each one. We noticed that the batch size is very impactful on this test, small batch sizes tend to favor L2 Regularization whereas bigger batch sizes favor MeanVar Normalization. We can see a plot of all the test performed on the Multi-Layer Network (with the hyperparameters listed before) in Figure ().
+We decided to further investigate normalization techniques and to do that we performed a training for each one. We noticed that the batch size is very impactful on this test, small batch sizes tend to favor L2 Regularization whereas bigger batch sizes favor MeanVar Normalization. We can see a plot of all the test performed on the Multi-Layer Network (with the hyperparameters listed before) in Figure \ref{fig:norm_test}.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\linewidth]{accs.png}
+\caption{Training Accuracies (Left) and Validation Accuracies (Right)}
+\label{fig:norm_test}
+\end{figure}
+From the data we collected we can say that MeanVar is the best overall performer, whereas Whitening is the worst. There is no clear separation between instance normalizations and statistical based ones since L2 normalization is the second most performing normalization.  
 \section{Results}
-The final predictions on the test set reached a percentage between $87.5$ and $92$ for the Multi-Layer Network and between $69$ and $72$ for the Single-Layer one. We can take a look at the \textit{Confusion Matrix} to better see how the networks perform. Examining the confusion matrices in Figure (), we can see that the Multi-Layer Network performs better as expected. We can also see that the most incorrect predictions were given for digits $0$ and $3$ in the case of the Single-Layer Network and $1$ and $3$ for the Multi-Layer. With regards to the Single-Layer Network we can also take a look at the weights, which should represent the spectrograms used by the network to make predictions.  
+The final predictions on the test set reached a percentage between $87.5$ and $92$ for the Multi-Layer Network and between $69$ and $72$ for the Single-Layer one. We can take a look at the \textit{Confusion Matrix} to better see how the networks perform. Examining the confusion matrices in Figure \ref{fig:conf_mat}, we can see that the Multi-Layer Network performs better as expected. We can also see that the most incorrect predictions were given for digits $0$ and $3$ in the case of the Single-Layer Network and $1$ and $3$ for the Multi-Layer. 
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\linewidth]{conf_mat.png}
+\caption{Single Layer (Left) and Multi Layer (Right) Confusion Matrices}
+\label{fig:conf_mat}
+\end{figure}
+With regards to the Single-Layer Network we can also take a look at the weights, which should represent the spectrograms used by the network to make predictions. In Figure () we see that $0$ and $3$ have very similar spectrograms as we expected from the confusion matrix. In the Multi-Layer case a direct weight interpretation is very difficult but we can manually listen to the samples which are misclassified with the most confidence. Some of them are perfectly discernible for a human while others can be a bit tricky since we feel that the signal-to-noise ratio is probably very low.
 \section{Conclusions}
 \end{document}
