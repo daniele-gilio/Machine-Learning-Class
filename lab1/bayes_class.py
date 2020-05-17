@@ -50,6 +50,7 @@ labels,scores=nb.multinomial_naive_bayes_inference(X,w,b)
 accuracy=(labels==Y).mean()*100
 print("Training Accuracy: ", accuracy)
 
+
 X=val_data[:,:-1]
 Y=val_data[:,-1]
 labels,scores=nb.multinomial_naive_bayes_inference(X,w,b)

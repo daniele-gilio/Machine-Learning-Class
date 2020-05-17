@@ -440,83 +440,13 @@ def visualize(data, n, data_path):
         plt.title(names[s])
         plt.show()
 
-def test_norm(image_save=True):
-    train_data=np.loadtxt(data_path+"train"+ext)
-    x_train=np.array(train_data[:,:-1])
-    y_train=np.array(train_data[:,-1].astype(np.int32))
-
-    val_data=np.loadtxt(data_path+"validation"+ext)
-    x_val=np.array(val_data[:,:-1])
-    y_val=np.array(val_data[:,-1].astype(np.int32))
-
-    mvar_train, mvar_val = meanvar_normalization(x_train, x_val)
-    minmax_train, minmax_val = minmax_normalization(x_train, x_val)
-    maxabs_train, maxabs_val = maxabs_normalization(x_train, x_val)
-    l1_train, l1_val = l1_normalization(x_train, x_val)
-    l2_train, l2_val = l2_normalization(x_train, x_val)
-    white_train, white_val = whitening(x_train, x_val)
-
-    train_norm=np.array([mvar_train, minmax_train, maxabs_train, l1_train, l2_train, white_train])
-    val_norm=np.array([mvar_val, minmax_val, maxabs_val, l1_val, l2_val, white_val])
-    names=["MeanVar", "MinMax", "MaxAbs", "l1", "l2", "Whitening"]
-    for k in range(6):
-        nn_multi=MLP([1024, 256, 128, 32, 10])
-        epochs=500
-        batch_size=8
-        steps=len(x_train)//batch_size + 1
-        train_accs=[]
-        val_accs=[]
-        ep_vec=[]
-        for i in range(epochs):
-            nn_multi.train(train_norm[k], y_train, lr0=1e-3, lambda_=1e-5, momentum=0.99,
-                          steps=steps, batch=batch_size)
-            train_labels=nn_multi.inference(train_norm[k])[0]
-            val_labels=nn_multi.inference(val_norm[k])[0]
-            train_acc=(train_labels==y_train).mean()*100
-            val_acc=(val_labels==y_val).mean()*100
-            train_accs.append(train_acc)
-            val_accs.append(val_acc)
-            ep_vec.append(i)
-        np.savetxt(names[k]+ ".txt", np.column_stack((ep_vec, train_accs, val_accs)))
-        print("Done with", names[k], k+1, "/ 6")
-
-        ###### Create Plots Images ######
-
-        for name in names:
-            x, train = np.loadtxt(name+".txt", unpack=True, usecols=(0,1))
-            plt.plot(x, train, label=name)
-        plt.legend()
-        plt.grid()
-        plt.title("Training Accuracies")
-        plt.xlabel("Epochs")
-        plt.ylabel("Accuracy [%]")
-        if image_save==True:
-            plt.savefig("training_accs.png")
-        else:
-            plt.show()
-
-        plt.clf()
-
-        for name in names:
-            x, val = np.loadtxt(name+".txt", unpack=True, usecols=(0,2))
-            plt.plot(x, val, label=name)
-        plt.legend()
-        plt.grid()
-        plt.title("Validation Accuracies")
-        plt.xlabel("Epochs")
-        plt.ylabel("Accuracy [%]")
-        if image_save==True:
-            plt.savefig("val_accs.png")
-        else:
-            plt.show()
-
-        plt.clf()
-
 data_path="spoken-digits/"
 ext=".txt.gz"
 test=False #True if one wants to test all the available normalization techniques
 image_save=True
 visual=False
+lr0=1e-2
+batch_size=256
 
 ##### Load Data #####
 train_data=np.loadtxt(data_path+"train"+ext)
@@ -540,10 +470,10 @@ print("Mean: ", x_train.mean())
 print("Standard Deviation: ", x_train.std())
 print()
 
-x_train, x_test, x_val=l2_normalization(x_train, x_test, x_val) #<- Normalize with L2
+x_train, x_test, x_val=meanvar_normalization(x_train, x_test, x_val) #<- Normalize with meanvar
 if visual==True:
     visualize(x_train,5,data_path)
-print("Post-L2 Normalization Values")
+print("Post MeanVar Normalization Values")
 print("Max: ",x_train.max())
 print("Min: ", np.min(x_train[np.nonzero(x_train)]))
 print("Mean: ", x_train.mean())
@@ -553,15 +483,14 @@ print()
 
 ##### Multi Layer Training and Evaluation #####
 nn_multi=MLP([1024, 256, 128, 32, 10])
-epochs=100
-batch_size=8
-steps=len(x_train)//batch_size + 1 #Automatically adjust steps so that steps*batch_size is almost the number of samples
+epochs=1000
+steps=len(x_train)//batch_size #Automatically adjust steps so that steps*batch_size is almost the number of samples
 train_accs=[]
 val_accs=[]
 ep_vec=[]
 plt.ion()
 for i in range(epochs):
-    nn_multi.train(x_train, y_train, lr0=1e-3, lambda_=1e-5, momentum=0.99,
+    nn_multi.train(x_train, y_train, lr0=lr0, lambda_=1e-5, momentum=0.99,
                   steps=steps, batch=batch_size)
     train_labels=nn_multi.inference(x_train)[0]
     val_labels=nn_multi.inference(x_val)[0]
@@ -585,10 +514,6 @@ print("Test Accuracy: ", test_acc)
 print()
 
 
-if test==True:
-    test_norm(image_save)
-
-
 ######## Single Layer Perceptron Training ########
 
 train_data=np.loadtxt(data_path+"train"+ext)
@@ -606,16 +531,15 @@ y_test=np.array(test_data[:,-1].astype(np.int32))
 x_train, x_test, x_val=l2_normalization(x_train, x_test, x_val) #<- Normalize with L2
 
 nn_single=MLP([1024, 10])
-epochs=500
+epochs=1000
 batch_size=8
-steps=len(x_train)//batch_size + 1
-print(steps)
+steps=len(x_train)//batch_size
 train_accs=[]
 val_accs=[]
 ep_vec=[]
 plt.ion()
 for i in range(epochs):
-    nn_single.train(x_train, y_train, lr0=1e-2, lambda_=1e-5, momentum=0.99,
+    nn_single.train(x_train, y_train, lr0=lr0, lambda_=1e-5, momentum=0.99,
                   steps=steps, batch=batch_size)
     train_labels=nn_single.inference(x_train)[0]
     val_labels=nn_single.inference(x_val)[0]
