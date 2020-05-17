@@ -487,6 +487,7 @@ print()
 
 if load_==False:
     ##### Multi Layer Training and Evaluation #####
+    print("Multi Layer Training")
     nn_multi=MLP([1024, 256, 128, 32, 10])
     epochs=1000
     steps=len(x_train)//batch_size #Automatically adjust steps so that steps*batch_size is almost the number of samples
@@ -509,16 +510,19 @@ if load_==False:
         plt.plot(ep_vec, val_accs, label="Validation Accuracy")
         plt.pause(0.005)
 
-        if (i+1)%10==0:
+        if (i+1)%100==0:
             print("Train Accuracy: ", train_acc, "Validation Accuracy: ", val_acc)
     plt.ioff()
     if save==True:
         nn_multi.save("nn_multi")
-
+    labels_multi, probs_multi=nn_multi.inference(x_test)
+    test_acc=(labels_multi==y_test).mean()*100
+    print("Test Accuracy: ", test_acc)
+    print()
 
 
     ######## Single Layer Perceptron Training ########
-
+    print("Single Layer Training")
     train_data=np.loadtxt(data_path+"train"+ext)
     x_train=np.array(train_data[:,:-1])
     y_train=np.array(train_data[:,-1].astype(np.int32))
@@ -562,20 +566,24 @@ if load_==False:
 
     if save==True:
         nn_single.save("nn_single")
+    labels=nn_single.inference(x_test)[0]
+    test_acc=(labels==y_test).mean()*100
+    print("Test Accuracy: ", test_acc)
+    print()
 
 if load_==True:
     nn_single=MLP.load("nn_single.npz")
     nn_multi=MLP.load("nn_multi.npz")
 
-labels_multi, probs_multi=nn_multi.inference(x_test)
-test_acc=(labels_multi==y_test).mean()*100
-print("Test Accuracy: ", test_acc)
-print()
+    labels_multi, probs_multi=nn_multi.inference(x_test)
+    test_acc=(labels_multi==y_test).mean()*100
+    print("Test Accuracy: ", test_acc)
+    print()
 
-labels=nn_single.inference(x_test_s)[0]
-test_acc=(labels==y_test).mean()*100
-print("Test Accuracy: ", test_acc)
-print()
+    labels=nn_single.inference(x_test_s)[0]
+    test_acc=(labels==y_test).mean()*100
+    print("Test Accuracy: ", test_acc)
+    print()
 
 ########### Create, fill and visualize confusion matrices #########
 
