@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.26)  15 MAY 2020 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.26)  17 MAY 2020 15:30
 entering extended mode
 **./spoken_digits.tex
 (spoken_digits.tex
@@ -326,25 +326,30 @@ File: spoken-digits/spectrograms.png Graphic file (type png)
 Package pdftex.def Info: spoken-digits/spectrograms.png  used on input line 17.
 
 (pdftex.def)             Requested size: 483.69687pt x 184.00333pt.
- [1 <./spoken-digits/spectrograms.png>] (spoken_digits.aux) ) 
+ [1 <./spoken-digits/spectrograms.png>] [2] (spoken_digits.aux) ) 
 Here is how much of TeX's memory you used:
- 3403 strings out of 492946
- 47686 string characters out of 3126266
- 126626 words of memory out of 3000000
- 7236 multiletter control sequences out of 15000+200000
- 11195 words of font info for 44 fonts, out of 3000000 for 9000
+ 3409 strings out of 492946
+ 47758 string characters out of 3126266
+ 127626 words of memory out of 3000000
+ 7240 multiletter control sequences out of 15000+200000
+ 12239 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,627b,223s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/danie/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/U
-sers/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr10.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on spoken_digits.pdf (2 pages, 2521688 bytes).
+ 41i,6n,25p,843b,223s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/dani
+e/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/danie/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/danie/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/danie/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
+rs/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmti10.pfb>
+Output written on spoken_digits.pdf (3 pages, 2562267 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
