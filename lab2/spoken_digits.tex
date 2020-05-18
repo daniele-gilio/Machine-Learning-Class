@@ -19,7 +19,13 @@ This assignment is about spoken digits recognition. The dataset is comprised of 
 \label{fig:data_spect}
 \end{figure}
 \section{Data Visualization and Analysis}
-In order to test our code we plotted spectrograms after we loaded the data and after performing normalization. The second plotting was also done in order to verify that the normalization did not interfere too much with the data. At this stage we opted for a Mean-Variance Normalization since it is the most common and we do not believe that the dataset geometry would be hugely altered. We can see the output of our code in Figure ().
+In order to test our code we plotted spectrograms after we loaded the data and after performing normalization. The second plotting was also done in order to verify that the normalization did not interfere too much with the data. At this stage we opted for a Mean-Variance Normalization since it is the most common and we do not believe that the dataset geometry would be hugely altered. We can see the output of our code in Figure \ref{fig:norm_spect}.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\linewidth]{norm_spect.png}
+\caption{Original Spectrogram (Top) and Normalized Spectrograms (Bottom)}
+\label{fig:norm_spect}
+\end{figure}
 \section{Neural Network}
 In order to experiment a bit with Neural Networks we built a Single-Layer Perceptron in which we have only an input layer and an output layer. As in the previous assignment we implemented a varying learning rate.
 \subsection{Architecture}
