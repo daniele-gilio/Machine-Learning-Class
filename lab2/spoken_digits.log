@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.27)  18 MAY 2020 11:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.27)  18 MAY 2020 11:47
 entering extended mode
 **./spoken_digits.tex
 (spoken_digits.tex
@@ -297,12 +297,43 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip46
 )
+("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquote
+s.sty"
+Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+
+("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbo
+x.sty"
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count114
+)
+\csq@reset=\count115
+\csq@gtype=\count116
+\csq@glevel=\count117
+\csq@qlevel=\count118
+\csq@maxlvl=\count119
+\csq@tshold=\count120
+\csq@ltx@everypar=\toks24
+
+("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquote
+s.def"
+File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquote
+s.cfg"
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+Package csquotes Info: Redefining alias 'italian' -> 'italian/quotes'.
+)
 ("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometr
 y.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
-\Gm@cnth=\count114
-\Gm@cntv=\count115
-\c@Gm@tempcnt=\count116
+\Gm@cnth=\count121
+\Gm@cntv=\count122
+\c@Gm@tempcnt=\count123
 \Gm@bindingoffset=\dimen119
 \Gm@wd@mp=\dimen120
 \Gm@odd@mp=\dimen121
@@ -311,41 +342,44 @@ Package: geometry 2018/04/16 v5.8 Page Geometry
 \Gm@layoutheight=\dimen124
 \Gm@layouthoffset=\dimen125
 \Gm@layoutvoffset=\dimen126
-\Gm@dimlist=\toks24
+\Gm@dimlist=\toks25
 
 ("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometr
-y.cfg")) (spoken_digits.aux)
+y.cfg"))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+ (spoken_digits.aux)
 \openout1 = `spoken_digits.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 ("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf.
 mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count117
+\scratchcounter=\count124
 \scratchdimen=\dimen127
 \scratchbox=\box31
-\nofMPsegments=\count118
-\nofMParguments=\count119
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count120
+\nofMPsegments=\count125
+\nofMParguments=\count126
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count127
 \MPscratchDim=\dimen128
-\MPnumerator=\count121
-\makeMPintoPDFobject=\count122
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
+\everyMPtoPDFconversion=\toks27
 )
 ("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopd
 f-base.sty"
@@ -363,7 +397,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 13.
+Package hyperref Info: Link coloring OFF on input line 14.
 
 ("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref
 .sty"
@@ -373,11 +407,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 tlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count123
+\c@section@level=\count130
 )
-LaTeX Info: Redefining \ref on input line 13.
-LaTeX Info: Redefining \pageref on input line 13.
-LaTeX Info: Redefining \nameref on input line 13.
+LaTeX Info: Redefining \ref on input line 14.
+LaTeX Info: Redefining \pageref on input line 14.
+LaTeX Info: Redefining \nameref on input line 14.
  (spoken_digits.out) (spoken_digits.out)
 \@outlinefile=\write3
 \openout3 = `spoken_digits.out'.
@@ -417,12 +451,12 @@ LaTeX Info: Redefining \nameref on input line 13.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 15.
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 ("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 "
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 15.
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
 ("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
 "
@@ -433,65 +467,65 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <spoken-digits/spectrograms.png, id=43, 2585.66pt x 983.675pt>
 File: spoken-digits/spectrograms.png Graphic file (type png)
 <use spoken-digits/spectrograms.png>
-Package pdftex.def Info: spoken-digits/spectrograms.png  used on input line 19.
+Package pdftex.def Info: spoken-digits/spectrograms.png  used on input line 20.
 
 (pdftex.def)             Requested size: 483.69687pt x 184.00333pt.
 <norm_spect.png, id=46, 3854.4pt x 963.6pt>
 File: norm_spect.png Graphic file (type png)
 <use norm_spect.png>
-Package pdftex.def Info: norm_spect.png  used on input line 27.
+Package pdftex.def Info: norm_spect.png  used on input line 28.
 (pdftex.def)             Requested size: 483.69687pt x 120.92021pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 \subsection
+l.38 \subsection
                 {Normalization Techniques} [1 <./spoken-digits/spectrograms.png
 > <./norm_spect.png>]
 <accs.png, id=58, 1284.8pt x 481.8pt>
 File: accs.png Graphic file (type png)
 <use accs.png>
-Package pdftex.def Info: accs.png  used on input line 41.
+Package pdftex.def Info: accs.png  used on input line 42.
 (pdftex.def)             Requested size: 483.69687pt x 181.38766pt.
 <conf_mat.png, id=60, 1284.8pt x 481.8pt>
 File: conf_mat.png Graphic file (type png)
 <use conf_mat.png>
-Package pdftex.def Info: conf_mat.png  used on input line 50.
+Package pdftex.def Info: conf_mat.png  used on input line 51.
 (pdftex.def)             Requested size: 386.95897pt x 145.10718pt.
 <nn_spec.png, id=62, 1284.8pt x 2409.0pt>
 File: nn_spec.png Graphic file (type png)
 <use nn_spec.png>
-Package pdftex.def Info: nn_spec.png  used on input line 57.
+Package pdftex.def Info: nn_spec.png  used on input line 58.
 (pdftex.def)             Requested size: 154.16934pt x 289.06754pt.
  [2 <./accs.png> <./conf_mat.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
+Underfull \hbox (badness 10000) in paragraph at lines 63--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
+Underfull \hbox (badness 10000) in paragraph at lines 63--68
 
  []
 
 [3 <./nn_spec.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (spoken_digits.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
 Package rerunfilecheck Info: File `spoken_digits.out' has not changed.
 (rerunfilecheck)             Checksum: 9B76324A4241B9D81E27AEF6C1DBA1A5;491.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
  ) 
 Here is how much of TeX's memory you used:
- 6980 strings out of 492946
- 101964 string characters out of 3125378
- 207581 words of memory out of 3000000
- 10774 multiletter control sequences out of 15000+200000
+ 7850 strings out of 492946
+ 115002 string characters out of 3125378
+ 233251 words of memory out of 3000000
+ 11632 multiletter control sequences out of 15000+200000
  12239 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,7n,28p,824b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,7n,28p,980b,409s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Daniele/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/Daniele/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Daniele/AppData/Local/Programs/MiKTeX
@@ -503,7 +537,7 @@ mr7.pfb><C:/Users/Daniele/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb><C:/Users/Daniele/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Daniele/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on spoken_digits.pdf (4 pages, 3039178 bytes).
+Output written on spoken_digits.pdf (4 pages, 3039964 bytes).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)

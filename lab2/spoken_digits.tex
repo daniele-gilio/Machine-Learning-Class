@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{hyperref}
+\usepackage[autostyle, italian=quotes]{csquotes}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Daniele Gilio}
 \title{Spoken Digits Recognition}
@@ -51,7 +52,7 @@ The final predictions on the test set reached a percentage between $87.5$ and $9
 \caption{Single Layer (Left) and Multi Layer (Right) Confusion Matrices}
 \label{fig:conf_mat}
 \end{figure}
-With regards to the Single-Layer Network we can also take a look at the weights, which should represent the spectrograms used by the network to make predictions. In Figure \ref{fig:nn_spect} we see that $0$ and $3$ have very similar spectrograms as we expected from the confusion matrix. In the Multi-Layer case a direct weight interpretation is very difficult but we can manually listen to the samples which are misclassified with the most confidence. Some of them are perfectly discernible for a human while others can be a bit tricky since we feel that the signal-to-noise ratio is probably low.
+With regards to the Single-Layer Network we can also take a look at the weights, which should represent the spectrograms used by the network to make predictions. In Figure \ref{fig:nn_spect} we see that $0$ and $3$ have very similar spectrograms as we expected from the confusion matrix. The Single Layer Network mostly uses the fist part of the spectrogram, commonly called the \enquote{\textit{attack}}. It also uses the \enquote{\textit{tail}} for the $0$ which has a very distinct one. In the Multi-Layer case a direct weight interpretation is very difficult but we can manually listen to the samples which are misclassified with the most confidence. Some of them are perfectly discernible for a human while others can be a bit tricky since we feel that the signal-to-noise ratio is probably low.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{nn_spec.png}
