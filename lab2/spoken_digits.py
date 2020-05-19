@@ -448,7 +448,7 @@ visual=False
 lr0=1e-2
 batch_size=256
 save=True
-load_=True
+load_=False
 
 ##### Load Data #####
 train_data=np.loadtxt(data_path+"train"+ext)
