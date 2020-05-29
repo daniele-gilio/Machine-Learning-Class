@@ -57,37 +57,28 @@ x_test=x_test.reshape(test_size,224,224,3)/255
 y_test=y_test.astype(np.int32)
 
 pvml_cnn=pvmlnet.PVMLNet.load("pvmlnet.npz")
+slp=mlp.MLP.load("slp_params.npz")
 
+pvml_cnn.weights[-1]=slp.weights[0][None, None, :, :]
+pvml_cnn.biases[-1]=slp.biases[0]
 
-x_train_1=x_train[0:20*12]
-x_train_2=x_train[20*12:40*12]
-x_train_3=x_train[40*12:60*12]
+pvml_cnn.update_w[-1]= np.zeros_like(pvml_cnn.weights[-1])
+pvml_cnn.update_b[-1]= np.zeros_like(pvml_cnn.biases[-1])
 
-#### I need to divide the x_train array in order to avoid the killing of the procees due to RAM saturation ####
-px_train=pvml_cnn.forward(x_train_1)[-3]
-px_train=np.append(px_train, pvml_cnn.forward(x_train_2)[-3])
-px_train=np.append(px_train, pvml_cnn.forward(x_train_3)[-3])
-px_train=px_train.reshape(train_size, 1024)
-
-px_test=pvml_cnn.forward(x_test)[-3]
-px_test=px_test.reshape(test_size,1024)
-
-slp=mlp.MLP([1024, 12])
-
-epochs=500
-batch_size=50
-steps=len(px_train)//batch_size #Automatically adjust steps so that steps*batch_size is almost the number of samples
+epochs=100
+batch_size=8
+steps=len(x_train)//batch_size #Automatically adjust steps so that steps*batch_size is almost the number of samples
 train_accs=[]
 test_accs=[]
 ep_vec=[]
 plt.ion()
 for i in range(epochs):
-        slp.train(px_train, y_train, lr=0.001, lambda_=1e-5, momentum=0.99,
+        pvml_cnn.train(x_train, y_train, lr=1e-5, lambda_=1e-5, momentum=0.99,
                       steps=steps, batch=batch_size)
-        train_labels=slp.inference(px_train)[0]
+        train_labels=pvml_cnn.inference(x_train)[0]
         train_acc=(train_labels==y_train).mean()*100
         train_accs.append(train_acc)
-        test_labels=slp.inference(px_test)[0]
+        test_labels=slp.inference(x_test)[0]
         test_acc=(test_labels==y_test).mean()*100
         test_accs.append(test_acc)
         ep_vec.append(i)
@@ -96,7 +87,7 @@ for i in range(epochs):
         plt.plot(ep_vec, test_accs, label="Test Accuracy")
         plt.pause(0.005)
 plt.ioff()
-slp.save("slp_params.npz")
-test_labels=slp.inference(px_test)[0]
+#slp.save("slp_params.npz")
+test_labels=slp.inference(x_test)[0]
 acc=(test_labels==y_test).mean()*100
-print("Single Layer Perceptron Test Accuracy (with PVMLNet as feature extractor): ", acc)
+print("Fine Tuned Network Accuracy: ", acc)
