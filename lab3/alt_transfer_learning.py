@@ -12,12 +12,13 @@ def file_list(path):
 aug=True
 if aug==True:
     print("Using Augmented Dataset")
-f_t=True
+f_t=False
 classes=["bluebell", "buttercup", "colts-foot", "daisy", "dandelion", "fritillary",
             "iris", "lily-valley", "pansy", "sunflower", "tigerlily", "windflower"]
 train_path="flowers/train"
 test_path="flowers/test"
 n_c=len(classes)
+alt_path="alt_6/"
 
 train_file=file_list(train_path)
 test_file=file_list(test_path)
@@ -81,19 +82,26 @@ y_test=y_test.astype(np.int32)
 
 pvml_cnn=pvmlnet.PVMLNet.load("pvmlnet.npz")
 if aug==False:
-    slp=mlp.MLP.load("alt_slp_params.npz")
+    slp=mlp.MLP.load(alt_path+"alt_slp_params.npz")
 else:
-    slp=mlp.MLP.load("alt_slp_aug_params.npz")
+    slp=mlp.MLP.load(alt_path+"alt_slp_aug_params.npz")
 
-print(pvml_cnn.weights[-1].shape)
-pvml_cnn.weights[-1]=slp.weights[0].reshape((8,8,512,12))#[None, None, :, :]
-print(pvml_cnn.weights[-1].shape)
+if alt_path=="alt_4/":
+    k=1
+    pvml_cnn.weights[-1]=slp.weights[0][None, None, :, :]
+elif alt_path=="alt_5/":
+    k=2
+    pvml_cnn.weights[-1]=slp.weights[0].reshape((6,6,512,12))
+elif alt_path=="alt_6/":
+    k=3
+    pvml_cnn.weights[-1]=slp.weights[0].reshape((8,8,512,12))
+
 pvml_cnn.biases[-1]=slp.biases[0]
 
 pvml_cnn.update_w[-1]= np.zeros_like(pvml_cnn.weights[-1])
 pvml_cnn.update_b[-1]= np.zeros_like(pvml_cnn.biases[-1])
 
-for i in range(3):
+for i in range(k):
     pvml_cnn.weights=np.delete(pvml_cnn.weights, -2)
     pvml_cnn.biases=np.delete(pvml_cnn.biases, -2)
     pvml_cnn.strides=np.delete(pvml_cnn.strides, -2)
@@ -135,10 +143,10 @@ for i in range(12):
 sn.heatmap(pre_conf_mat, annot=True, cmap="coolwarm")
 if aug==False:
     plt.title("Pre Fine Tuning Confusion Matrix")
-    plt.savefig("alt_pret_confusion_matrix.png")
+    plt.savefig(alt_path+"alt_pret_confusion_matrix.png")
 else:
     plt.title("Pre Fine Tuning Confusion Matrix (Augmented Dataset)")
-    plt.savefig("alt_pret_aug_confusion_matrix.png")
+    plt.savefig(alt_path+"alt_pret_aug_confusion_matrix.png")
 
 plt.clf()
 
@@ -186,14 +194,14 @@ if f_t==True:
 
     plt.ioff()
     if aug==True:
-        pvml_cnn.save("alt_fine_tuned_aug_pvmlnet.npz")
+        pvml_cnn.save(alt_path+"alt_fine_tuned_aug_pvmlnet.npz")
     else:
-        pvml_cnn.save("alt_fine_tuned_pvmlnet.npz")
+        pvml_cnn.save(alt_path+"alt_fine_tuned_pvmlnet.npz")
 else:
     if aug==True:
-        pvml_cnn=pvmlnet.PVMLNet.load("alt_fine_tuned_aug_pvmlnet.npz")
+        pvml_cnn=pvmlnet.PVMLNet.load(alt_path+"alt_fine_tuned_aug_pvmlnet.npz")
     else:
-        pvml_cnn=pvmlnet.PVMLNet.load("alt_fine_tuned_pvmlnet.npz")
+        pvml_cnn=pvmlnet.PVMLNet.load(alt_path+"alt_fine_tuned_pvmlnet.npz")
 
 test_labels, probs=pvml_cnn.inference(x_test)
 acc=np.array((test_labels==y_test)).mean()*100
@@ -221,9 +229,9 @@ for i in range(12):
 sn.heatmap(post_conf_mat, annot=True, cmap="coolwarm")
 if aug==False:
     plt.title("Post Fine Tuning Confusion Matrix")
-    plt.savefig("alt_postf_confusion_matrix.png")
+    plt.savefig(alt_path+"alt_postf_confusion_matrix.png")
 else:
     plt.title("Post Fine Tuning Confusion Matrix (Augmented Dataset)")
-    plt.savefig("alt_postf_aug_confusion_matrix.png")
+    plt.savefig(alt_path+"alt_postf_aug_confusion_matrix.png")
 
 plt.clf()
