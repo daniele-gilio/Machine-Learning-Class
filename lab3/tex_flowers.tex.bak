@@ -83,7 +83,7 @@ Test Accuracy {[}\%{]} & 89.167   & 91.666   & 93.75    & 94.167   \\ \hline
 \end{table}
 We can clearly see that we had gained a little accuracy in the Layer $-3$, we slightly overfitted in Layer $-4$ case and we did not gain anything in Layer $-5$ and $-6$ cases. If we consider that the mean improvement was $0 \%$, fine tuning does not seem a very good idea for this problem with this dataset. 
 \section{Data Augmentation}
-Working with images has a very positive element: \textit{Data Augmentation}. Since most features in images are independent from a lot of transformations (rotations, color saturation, image exposure, translation, etc.) we can expand a dataset by applying these transformations to it. Most of the times the bigger the dataset the better the performance. We decided to 
+Working with images has a very positive element: \textit{Data Augmentation}. Since most features in images are independent from a lot of transformations (rotations, color saturation, image exposure, transla
 \section{Results Analysis}
 \section{Conclusions}
 \end{document}

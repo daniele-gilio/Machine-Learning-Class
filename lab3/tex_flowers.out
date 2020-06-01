@@ -1,0 +1,10 @@
+\BOOKMARK [1][-]{section.0.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.0.2}{Low Level Classifier}{}% 2
+\BOOKMARK [2][-]{subsection.0.2.1}{Single Feature}{section.0.2}% 3
+\BOOKMARK [2][-]{subsection.0.2.2}{Multiple Features}{section.0.2}% 4
+\BOOKMARK [1][-]{section.0.3}{Neural Features}{}% 5
+\BOOKMARK [2][-]{subsection.0.3.1}{PVMLNet as Feature Extractor}{section.0.3}% 6
+\BOOKMARK [2][-]{subsection.0.3.2}{Transfer Learning}{section.0.3}% 7
+\BOOKMARK [1][-]{section.0.4}{Data Augmentation}{}% 8
+\BOOKMARK [1][-]{section.0.5}{Results Analysis}{}% 9
+\BOOKMARK [1][-]{section.0.6}{Conclusions}{}% 10
