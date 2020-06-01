@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.26)  31 MAY 2020 21:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.26)  1 JUN 2020 21:45
 entering extended mode
 **./tex_flowers.tex
 (tex_flowers.tex
@@ -445,73 +445,71 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/danie/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
 
 ("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
 <pvmlnet.png, id=53, 644.4075pt x 363.60844pt>
 File: pvmlnet.png Graphic file (type png)
 <use pvmlnet.png>
-Package pdftex.def Info: pvmlnet.png  used on input line 56.
+Package pdftex.def Info: pvmlnet.png  used on input line 59.
 (pdftex.def)             Requested size: 362.77264pt x 204.70123pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.72 \subsection
-                {Transfer Learning} [1]
+l.76 \subsection
+                {Transfer Learning} [1] [2 <./pvmlnet.png>]
+<conf_mat.png, id=85, 1927.2pt x 481.8pt>
+File: conf_mat.png Graphic file (type png)
+<use conf_mat.png>
+Package pdftex.def Info: conf_mat.png  used on input line 93.
+(pdftex.def)             Requested size: 483.69687pt x 120.9202pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
 
-LaTeX Warning: Reference `tab:ftft-pvmlnet' on page 2 undefined on input line 7
-3.
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
-[2 <./pvmlnet.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
+ []
+
+[3 <./conf_mat.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  (tex_flowers.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
 Package rerunfilecheck Info: File `tex_flowers.out' has not changed.
-(rerunfilecheck)             Checksum: 6BBB965B24C7AEE6414F476136352ACD;612.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 87.
+(rerunfilecheck)             Checksum: 167C774441724718418A44C2D83CC0AC;612.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 7775 strings out of 492946
- 113654 string characters out of 3126266
- 236234 words of memory out of 3000000
- 11560 multiletter control sequences out of 15000+200000
- 11849 words of font info for 46 fonts, out of 3000000 for 9000
+ 7785 strings out of 492946
+ 113792 string characters out of 3126266
+ 238378 words of memory out of 3000000
+ 11565 multiletter control sequences out of 15000+200000
+ 11541 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,9n,28p,1090b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,9n,28p,1262b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/danie/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/danie/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/dani
-e/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
-:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr17.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr6.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/danie/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/danie/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/d
-anie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmti10.pfb>
-Output written on tex_flowers.pdf (3 pages, 189105 bytes).
+/cm/cmbx12.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/danie/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/danie/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/danie
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:
+/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr6.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr7.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr8.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/danie/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/danie/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/da
+nie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb
+>
+Output written on tex_flowers.pdf (4 pages, 270303 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
