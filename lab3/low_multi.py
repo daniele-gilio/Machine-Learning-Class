@@ -10,7 +10,7 @@ def file_list(path):
     files = [f for f in glob.glob(path + "/" + "**/*.jpg", recursive=True)]
     return files
 
-load=True
+load=False
 aug=True
 if aug==True:
     print("Using Augmented Dataset")
