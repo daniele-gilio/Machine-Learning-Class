@@ -345,7 +345,7 @@ def stem(w):
 
 def read_file(file, ignore_common=False, stemming=False):
     k=[]
-    p="!\"#$&'()*+,-./:;<=>?@[\\]^_{|}~`1234567890"
+    p="!\"#$&'()*+,-./:;<=>?@[\\]^_{|}~`1234567890%"
     table=str.maketrans(p, " " * len(p))
     if ignore_common==False and stemming==False:
         f=file
@@ -356,7 +356,7 @@ def read_file(file, ignore_common=False, stemming=False):
                     k.append(word.lower())
 
     elif ignore_common==True and stemming==False:
-        f=open("aclImdb/stopwords.txt", "r")
+        f=open("stopwords.txt", "r")
         common=[]
         for w in f.read().split():
             common.append(w)
@@ -380,7 +380,7 @@ def read_file(file, ignore_common=False, stemming=False):
 
 
     elif stemming==True and ignore_common==True:
-        f=open("aclImdb/stopwords.txt", "r")
+        f=open("stopwords.txt", "r")
         common=[]
         for w in f.read().split():
             common.append(stem(w.lower()))
@@ -423,7 +423,7 @@ def build_bow(file, save, fname, size, stemming=False):
         dic.add(w)
         n+=1
     f.close()
-    p="!\"#$&'()*+,-./:;<=>?@[\\]^_{|}~"
+    p="!\"#$&'()*+,-./:;<=>?@[\\]^_{|}~1234567890%"
     table=str.maketrans(p, " " * len(p))
     matrix=np.zeros((len(file), n))
     f=file
