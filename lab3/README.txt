@@ -1,0 +1,1 @@
+Run cnn.py before running transfer_learning.py. Also run alt_cnn.py before running alt_transfer_learning.py.

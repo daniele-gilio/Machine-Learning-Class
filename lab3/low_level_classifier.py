@@ -9,7 +9,7 @@ def file_list(path):
     files = [f for f in glob.glob(path + "/" + "**/*.jpg", recursive=True)]
     return files
 
-load=True
+load=False
 aug=True
 
 classes=["bluebell", "buttercup", "colts-foot", "daisy", "dandelion", "fritillary",

@@ -109,14 +109,6 @@ for i in range(k):
     pvml_cnn.update_w = np.delete(pvml_cnn.update_w, -2)
     pvml_cnn.update_b = np.delete(pvml_cnn.update_b, -2)
 
-'''
-pvml_cnn.weights=np.delete(pvml_cnn.weights, -2)
-pvml_cnn.biases=np.delete(pvml_cnn.biases, -2)
-pvml_cnn.strides=np.delete(pvml_cnn.strides, -2)
-
-pvml_cnn.update_w = np.delete(pvml_cnn.update_w, -2)
-pvml_cnn.update_b = np.delete(pvml_cnn.update_b, -2)
-'''
 test_labels, probs=pvml_cnn.inference(x_test)
 p_acc=np.array((test_labels==y_test)).mean()*100
 print("Pre Fine Tunining Network Accuracy: ", p_acc, "%")
