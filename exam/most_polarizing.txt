@@ -1,0 +1,342 @@
+[1mPublisher:  AllAfrica.com [0m
+[1m business [0m
+Most Influencial Word: bank , Score: 0.9929984151651264
+Least Influencial Word: halfwai , Score: 0.2790390158475014
+
+[1m entertainment [0m
+Most Influencial Word: bank , Score: 0.9929984151651264
+Least Influencial Word: mandela , Score: 0.26929759003105314
+
+[1m health [0m
+Most Influencial Word: ebola , Score: 0.9998825234229759
+Least Influencial Word: mandela , Score: 0.26929759003105314
+
+[1m science [0m
+Most Influencial Word: ebola , Score: 0.9998825234229759
+Least Influencial Word: mandela , Score: 0.26929759003105314
+
+
+[1mPublisher:  CBS Local [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.99835209805946
+Least Influencial Word: termin , Score: 0.2726119866106821
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9983870846938409
+Least Influencial Word: expect , Score: 0.26792148929081494
+
+[1m health [0m
+Most Influencial Word: ebola , Score: 0.9993392985989522
+Least Influencial Word: postiv , Score: 0.2587284134224219
+
+[1m science [0m
+Most Influencial Word: googl , Score: 0.9997663589173177
+Least Influencial Word: postiv , Score: 0.2587284134224219
+
+
+[1mPublisher:  CNET [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9962302769666395
+Least Influencial Word: employe , Score: 0.3311341392496989
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9998666836648249
+Least Influencial Word: employe , Score: 0.3311341392496989
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9998666836648249
+Least Influencial Word: employe , Score: 0.3311341392496989
+
+[1m science [0m
+Most Influencial Word: googl , Score: 0.9998955085237764
+Least Influencial Word: employe , Score: 0.3311341392496989
+
+
+[1mPublisher:  Contactmusic.com [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9883802095551774
+Least Influencial Word: ocean , Score: 0.33939319621701103
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.999974374003959
+Least Influencial Word: zoo , Score: 0.33837848895235884
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.999974374003959
+Least Influencial Word: zoo , Score: 0.33837848895235884
+
+[1m science [0m
+Most Influencial Word: kardashian , Score: 0.999974374003959
+Least Influencial Word: zoo , Score: 0.33837848895235884
+
+
+[1mPublisher:  Daily Mail [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9897630310922105
+Least Influencial Word: retail , Score: 0.4004599002922461
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9999889930023003
+Least Influencial Word: dna , Score: 0.3475982746535392
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9999889930023003
+Least Influencial Word: dna , Score: 0.3475982746535392
+
+[1m science [0m
+Most Influencial Word: kardashian , Score: 0.9999889930023003
+Least Influencial Word: dna , Score: 0.3475982746535392
+
+
+[1mPublisher:  Delhi Daily News [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.992432494243197
+Least Influencial Word: ocean , Score: 0.35271649719825815
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9999891523805218
+Least Influencial Word: ocean , Score: 0.35271649719825815
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9999891523805218
+Least Influencial Word: increas , Score: 0.3418700483739398
+
+[1m science [0m
+Most Influencial Word: kardashian , Score: 0.9999891523805218
+Least Influencial Word: increas , Score: 0.3418700483739398
+
+
+[1mPublisher:  Entertainmentwise [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9948760589498553
+Least Influencial Word: california , Score: 0.33096907475410814
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9999858179524161
+Least Influencial Word: california , Score: 0.33096907475410814
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9999858179524161
+Least Influencial Word: california , Score: 0.33096907475410814
+
+[1m science [0m
+Most Influencial Word: kardashian , Score: 0.9999858179524161
+Least Influencial Word: california , Score: 0.33096907475410814
+
+
+[1mPublisher:  Examiner.com [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9965224961891468
+Least Influencial Word: employe , Score: 0.31432450562859193
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9999809142387435
+Least Influencial Word: employe , Score: 0.31432450562859193
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9999809142387435
+Least Influencial Word: employe , Score: 0.31432450562859193
+
+[1m science [0m
+Most Influencial Word: kardashian , Score: 0.9999809142387435
+Least Influencial Word: employe , Score: 0.31432450562859193
+
+
+[1mPublisher:  Firstpost [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9976047255638558
+Least Influencial Word: champion , Score: 0.3245501146075155
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9999729838077867
+Least Influencial Word: electron , Score: 0.3174573902104766
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9999729838077867
+Least Influencial Word: ban , Score: 0.3052208814748812
+
+[1m science [0m
+Most Influencial Word: kardashian , Score: 0.9999729838077867
+Least Influencial Word: shop , Score: 0.3006166687478468
+
+
+[1mPublisher:  Fox News [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9983186010998982
+Least Influencial Word: hear , Score: 0.2892607442929326
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9999599225969261
+Least Influencial Word: hear , Score: 0.2892607442929326
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9999599225969261
+Least Influencial Word: hear , Score: 0.2892607442929326
+
+[1m science [0m
+Most Influencial Word: kardashian , Score: 0.9999599225969261
+Least Influencial Word: hear , Score: 0.2892607442929326
+
+
+[1mPublisher:  Headlines \& Global News [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9987916557045411
+Least Influencial Word: storag , Score: 0.27989267446361227
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9999404678544275
+Least Influencial Word: storag , Score: 0.27989267446361227
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9999404678544275
+Least Influencial Word: storag , Score: 0.27989267446361227
+
+[1m science [0m
+Most Influencial Word: googl , Score: 0.9999548362561073
+Least Influencial Word: storag , Score: 0.27989267446361227
+
+
+[1mPublisher:  Huffington Post [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.999106995102913
+Least Influencial Word: recommend , Score: 0.28621403684197044
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9999114527986559
+Least Influencial Word: rest , Score: 0.280169577478224
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9999114527986559
+Least Influencial Word: carbon , Score: 0.27929058896890724
+
+[1m science [0m
+Most Influencial Word: googl , Score: 0.9999619488126958
+Least Influencial Word: carbon , Score: 0.27929058896890724
+
+
+[1mPublisher:  Medical Daily [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9992969705357191
+Least Influencial Word: termin , Score: 0.28363399799316924
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9998681250813972
+Least Influencial Word: culprit , Score: 0.26005258496562356
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9998681250813972
+Least Influencial Word: culprit , Score: 0.26005258496562356
+
+[1m science [0m
+Most Influencial Word: googl , Score: 0.9999679202752384
+Least Influencial Word: culprit , Score: 0.26005258496562356
+
+
+[1mPublisher:  NASDAQ [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9994177217149396
+Least Influencial Word: diner , Score: 0.27025795916475026
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9997966888294607
+Least Influencial Word: personnel , Score: 0.2567428047038038
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9997966888294607
+Least Influencial Word: personnel , Score: 0.2567428047038038
+
+[1m science [0m
+Most Influencial Word: googl , Score: 0.9999727382327449
+Least Influencial Word: personnel , Score: 0.2567428047038038
+
+
+[1mPublisher:  NDTV [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9994931735260796
+Least Influencial Word: mourn , Score: 0.26708942736486135
+
+[1m entertainment [0m
+Most Influencial Word: kardashian , Score: 0.9996830858112176
+Least Influencial Word: headach , Score: 0.26444728738153445
+
+[1m health [0m
+Most Influencial Word: kardashian , Score: 0.9996830858112176
+Least Influencial Word: headach , Score: 0.26444728738153445
+
+[1m science [0m
+Most Influencial Word: googl , Score: 0.9999765143688558
+Least Influencial Word: resurg , Score: 0.2625999793935441
+
+
+[1mPublisher:  Reuters [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9995386917610881
+Least Influencial Word: mishap , Score: 0.2716221526084888
+
+[1m entertainment [0m
+Most Influencial Word: tax , Score: 0.9995386917610881
+Least Influencial Word: mishap , Score: 0.2716221526084888
+
+[1m health [0m
+Most Influencial Word: cancer , Score: 0.9996715663896173
+Least Influencial Word: subject , Score: 0.2704212266430162
+
+[1m science [0m
+Most Influencial Word: googl , Score: 0.9999797616793615
+Least Influencial Word: address , Score: 0.26486205495708404
+
+
+[1mPublisher:  Science World Report [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.999564104570641
+Least Influencial Word: programm , Score: 0.2600775507858568
+
+[1m entertainment [0m
+Most Influencial Word: tax , Score: 0.999564104570641
+Least Influencial Word: programm , Score: 0.2600775507858568
+
+[1m health [0m
+Most Influencial Word: cancer , Score: 0.9996698968495609
+Least Influencial Word: programm , Score: 0.2600775507858568
+
+[1m science [0m
+Most Influencial Word: googl , Score: 0.9999825561431779
+Least Influencial Word: programm , Score: 0.2600775507858568
+
+
+[1mPublisher:  Tech Times [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.999575654004961
+Least Influencial Word: nyc , Score: 0.28222504386297276
+
+[1m entertainment [0m
+Most Influencial Word: tax , Score: 0.999575654004961
+Least Influencial Word: nyc , Score: 0.28222504386297276
+
+[1m health [0m
+Most Influencial Word: cancer , Score: 0.9996556526091515
+Least Influencial Word: mastectomi , Score: 0.27826747199646173
+
+[1m science [0m
+Most Influencial Word: googl , Score: 0.9999849620725902
+Least Influencial Word: abort , Score: 0.2737163966566214
+
+
+[1mPublisher:  Ubergizmo [0m
+[1m business [0m
+Most Influencial Word: tax , Score: 0.9995772547819392
+Least Influencial Word: brown , Score: 0.28622779137128246
+
+[1m entertainment [0m
+Most Influencial Word: tax , Score: 0.9995772547819392
+Least Influencial Word: brown , Score: 0.28622779137128246
+
+[1m health [0m
+Most Influencial Word: cancer , Score: 0.9996310639543862
+Least Influencial Word: brown , Score: 0.28622779137128246
+
+[1m science [0m
+Most Influencial Word: appl , Score: 0.9999873171199473
+Least Influencial Word: brown , Score: 0.28622779137128246
+
+

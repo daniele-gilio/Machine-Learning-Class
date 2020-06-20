@@ -450,28 +450,22 @@ def build_bow(file, save, fname, size, stemming=False):
     else:
         np.savetxt(fname+".gz", matrix.astype(np.int32))
 
-'''
-n, st, ic = np.loadtxt("parameters.txt", unpack=True, usecols=(0,1,2))
-n=int(n)
-st=bool(st)
-ic=bool(ic)
-train_path="aclImdb/train"
-val_path="aclImdb/validation"
-test_path="aclImdb/test"
-train_name= "bows/train_" + str(n)
-test_name="bows/test_" + str(n)
-val_name="bows/val_" + str(n)
-print("Starting Dictionary build...")
-build_dict(train_path,n,True, stemming=st, ignore_common=ic) #Build the dictionary
-print("Dictionary Built")
-#######Build BoWs#######
-Path("bows").mkdir(parents=True, exist_ok=True)
-print("Starting Bows build...")
-print("Building Train BoW")
-build_bow(train_path, True, train_name, stemming=st, size=n)
-print("Building Test BoW")
-build_bow(test_path, True, test_name , stemming=st, size=n)
-print("Building Validation BoW")
-build_bow(val_path, True, val_name, stemming=st, size=n)
-print("Done building Bag of Words representations")
-'''
+def get_dict(size):
+    f=open("voc/vocabulary_" + str(size) + ".txt", "r")
+    n=0
+    voc={}
+    dic=set() #<- using sets speeds up thing noticeably since the "in" function goes as O(1) with them,
+                #Lists would take a time that scales as O(n)
+    for w in f.read().split():
+        voc[w]=n
+        dic.add(w)
+        n+=1
+    f.close()
+    
+    return list(voc)
+
+def get_word(dic, index):
+    return dic[index]
+
+    
+    
