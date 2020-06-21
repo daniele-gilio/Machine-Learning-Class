@@ -11,6 +11,7 @@
 \author{Daniele Gilio}
 \title{Exam Assignment}
 \begin{document}
+\maketitle
 \section{Introduction}
 This assignment was about text classification. We had to classify News titles by their topic; our classes were \enquote{science}, \enquote{health}, \enquote{business} and \enquote{entertainment}. Our raw features were the title itself and the publisher. The dataset was already divided in $10000$ training samples, $1000$ validation samples and $1000$ test samples. Our objective is to create a feature extraction process and to build one or more classifiers.
 \section{Feature Extraction}
@@ -40,7 +41,7 @@ We chose the \textit{Multinomial Bayesian Classifier} as our baseline for testin
 \label{fig:bayes_confmat}
 \end{figure}
 \subsection{Multinomial Logistic Regression}
-The \textit{Multinomial Logistic Regression} classifier was the most disappointing amongst all the classifiers we tested. Not only did it perform quite terribly if compared to the others but it also took a very long time to train. 
+The \textit{Multinomial Logistic Regression} classifier was the most disappointing amongst all the classifiers we tested. Not only did it perform quite terribly if compared to the others but it also took a very long time to train (even if we used a version that leverages a CUDA GPU). We used a constant learning rate ($\gamma=10^{-2}$) since a test with a variable one did produce worse results. A lower learning rate also worsened the results. We set the normalization constant at $\lambda=10^{-5}$ and we trained it for $10000$ steps. This model reacted to BoW normalization as the Bayesian Classifier so we did not apply any. 
 \subsection{Single Layer Perceptron}
 \subsection{Multi-Layer Perceptron}
 \section{Results Analysis}
