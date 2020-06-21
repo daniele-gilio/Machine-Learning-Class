@@ -139,7 +139,9 @@ for i in range(len(test_pub_enc)):
 print("Done reading the Dataset")
 print()
 
+q=open("final_results.txt", "w")
 print("Naive Bayes Classifier")
+print("Naive Bayes Classifier", file=q)
 ######## Bayes #########
 data=np.load("bayes_"+str(size)+".npz", allow_pickle=True)
 w=data["weights"]
@@ -147,14 +149,17 @@ b=data["biases"]
 labels, scores = pvml.multinomial_naive_bayes_inference(x_train, w, b)
 acc=(labels==y_train).mean()*100
 print("Training Accuracy: ", acc)
+print("Training Accuracy: ", acc, file=q)
 
 labels, scores = pvml.multinomial_naive_bayes_inference(x_val, w, b)
 acc=(labels==y_val).mean()*100
 print("Validation Accuracy: ", acc)
+print("Validation Accuracy: ", acc, file=q)
 
 labels, scores = pvml.multinomial_naive_bayes_inference(x_test, w, b)
 acc=(labels==y_test).mean()*100
 print("Test Accuracy: ", acc)
+print("Test Accuracy: ", acc, file=q)
 
 b_acc=acc
 
@@ -203,11 +208,15 @@ bayes_acc=[82.3, 88.3, 90.4, 90.3, 90.0] #no-norm
 #88.0 stemming
 #88.9 ignore_common+stemming
 print("Naive Bayes Classifier Done")
+print("Naive Bayes Classifier Done", file=q)
 print()
+print(file=q)
 print()
+print(file=q)
 
 
 print("Logistic Regression")
+print("Logistic Regression", file=q)
 ######## LogReg ############
 data=np.load("logreg_"+str(size)+".npz", allow_pickle=True)
 w=data["weights"]
@@ -216,16 +225,19 @@ scores=pvml.multinomial_logreg_inference(x_train, w, b)
 labels=np.argmax(scores, axis=1)
 acc=np.array(labels==y_train).mean()*100
 print("Training Accuracy: ", acc)
+print("Training Accuracy: ", acc, file=q)
 
 scores=pvml.multinomial_logreg_inference(x_val, w, b)
 labels=np.argmax(scores, axis=1)
 acc=np.array(labels==y_val).mean()*100
 print("Validation Accuracy: ", acc)
+print("Validation Accuracy: ", acc, file=q)
 
 scores=pvml.multinomial_logreg_inference(x_test, w, b)
 labels=np.argmax(scores, axis=1)
 acc=np.array(labels==y_test).mean()*100
 print("Test Accuracy: ", acc)
+print("Test Accuracy: ", acc, file=q)
 
 l_acc=acc
 
@@ -274,8 +286,11 @@ logreg_acc=[72.8, 75.1, 75.6, 75.5, 75.6]
 #76.7 ignore_common+stemming
 
 print("Done with Logreg")
+print("Done with Logreg", file=q)
 print()
+print(file=q)
 print()
+print(file=q)
 
 ########### Normalize Bow with MaxAbs for SLP and MLP (as in training) ############
 for i in range(len(t_pub_enc)):
@@ -286,17 +301,21 @@ for i in range(len(test_pub_enc)):
     x_test[i][:-1]=pvml.maxabs_normalization(x_test[i][:-1])
 
 print("Single Layer Perceptron")
+print("Single Layer Perceptron", file=q)
 ########## SLP ##########
 snn=pvml.MLP.load("snn_"+str(size)+".npz")
 train_labels=snn.inference(x_train)[0]
 train_acc=(train_labels==y_train).mean()*100
 print("Final Training Accuracy: ", train_acc)
+print("Final Training Accuracy: ", train_acc, file=q)
 val_labels=snn.inference(x_val)[0]
 val_acc=(val_labels==y_val).mean()*100
 print("Final Validation Accuracy: ", val_acc)
+print("Final Validation Accuracy: ", val_acc, file=q)
 test_labels, test_scores=snn.inference(x_test)
 test_acc=(test_labels==y_test).mean()*100
 print("Test Accuracy: ", test_acc)
+print("Test Accuracy: ", test_acc, file=q)
 
 s_acc=test_acc
 
@@ -345,9 +364,11 @@ slp_acc=[83.2, 87.6, 89.6, 89.9, 90.2]
 #89.4 ignore_common+stemming
 
 print("Done with SLP")
+print("Done with SLP", file=q)
 print()
+print(file=q)
 print()
-
+print(file=q)
 
 ########### Accuracy vs Dictionary Size #########
 plt.plot(np.linspace(1000, 10000, 5), bayes_acc, label="Bayes", marker=".")
@@ -375,17 +396,21 @@ plt.clf()
 
 
 print("Multi-Layer Perceptron")
+print("Multi-Layer Perceptron", file=q)
 ########## MLP ##########
 dnn=pvml.MLP.load("dnn_"+str(size)+".npz")
 train_labels=dnn.inference(x_train)[0]
 train_acc=(train_labels==y_train).mean()*100
 print("Final Training Accuracy: ", train_acc)
+print("Final Training Accuracy: ", train_acc, file=q)
 val_labels=dnn.inference(x_val)[0]
 val_acc=(val_labels==y_val).mean()*100
 print("Final Validation Accuracy: ", val_acc)
+print("Final Validation Accuracy: ", val_acc, file=q)
 test_labels, test_scores=dnn.inference(x_test)
 test_acc=(test_labels==y_test).mean()*100
 print("Test Accuracy: ", test_acc)
+print("Test Accuracy: ", test_acc, file=q)
 mlp_acc=test_acc
 
 wrong=np.asarray((test_labels!=y_test))
@@ -438,8 +463,13 @@ plt.clf()
 #[size+1, 8, 4] // // 88.1
 
 print("MLP Done")
+print("MLP Done", file=q)
 print()
+print(file=q)
 print()
+print(file=q)
+
+q.close()
 
 print("Creating Graphs...")
 ########### Accuracy vs. Training Time #############

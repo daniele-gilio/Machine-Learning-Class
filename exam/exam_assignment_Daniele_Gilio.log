@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.27)  21 JUN 2020 12:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.26)  21 JUN 2020 14:26
 entering extended mode
 **./exam_assignment_Daniele_Gilio.tex
 (exam_assignment_Daniele_Gilio.tex
 LaTeX2e <2018-12-01>
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
 Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
 File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -20,72 +20,66 @@ File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.st
+) ("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.st
 y"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.st
-y"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
 Package: babel 2018/11/13 3.27 The Babel package
-
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.d
-ef"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def
+"
 File: switch.def 2018/11/13 3.27 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cf
-g"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\en
-glish.ldf"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\engl
+ish.ldf"
 Language: english 2017/06/06 v3.3r English support from the babel system
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.de
-f"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2018/11/13 3.27 Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen103
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel
-.def")
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
+ef")
 \bbl@dirlevel=\count90
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.
-sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
+y"
 Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.
-sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.s
-ty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen104
 ))
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.s
-ty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.s
-ty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
+"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count91
@@ -126,63 +120,62 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfont
-s.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
+sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb
-.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
+ty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphic
-x.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.
-sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphic
-s.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.st
-y"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\gra
-phics.cfg"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdf
-tex.def"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometr
-y.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf
-.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.s
+ty"
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvte
-x.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.
+sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxete
-x.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.
+sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count103
@@ -198,14 +191,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen122
 \Gm@dimlist=\toks22
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometr
-y.cfg"))
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquote
-s.sty"
-Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+cfg"))
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.
+sty"
+Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbo
-x.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.
+sty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count106
 )
@@ -217,31 +210,31 @@ Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \csq@tshold=\count112
 \csq@ltx@everypar=\toks23
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquote
-s.def"
-File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.
+def"
+File: csquotes.def 2019/05/10 v5.2e csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquote
-s.cfg"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.
+cfg"
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling multilingual quotes.
 Package csquotes Info: Redefining alias 'italian' -> 'italian/quotes'.
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperre
-f.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
+sty"
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsu
-b-hyperref.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
+hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsu
-b-generic.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
+generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -275,28 +268,28 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook
-.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook.s
+ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptio
-ns.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions
+.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen123
 \Hy@linkcounter=\count113
 \Hy@pagecounter=\count114
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.
-def"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
+f"
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count115
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperre
-f.cfg"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref.
+cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4519.
@@ -307,8 +300,7 @@ Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
 \c@Hy@tempcnt=\count116
-
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+ ("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -332,14 +324,14 @@ LaTeX Info: Redefining \pageref on input line 6454.
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex
-.def"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
+ef"
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
 \Fld@listcount=\count121
 \c@bookmark@seq@number=\count122
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfi
-lecheck.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfile
+check.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -366,8 +358,8 @@ LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf.
-mkii"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf.mk
+ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count123
 \scratchdimen=\dimen127
@@ -381,12 +373,12 @@ mkii"
 \makeMPintoPDFobject=\count128
 \everyMPtoPDFconversion=\toks25
 )
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopd
-f-base.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
+base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.
-sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
+y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -433,12 +425,12 @@ G,.JBIG2,.JB2,.eps]
 \AtBeginShipoutBox=\box30
 Package hyperref Info: Link coloring OFF on input line 13.
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref
-.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
+ty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\getti
-tlestring.sty"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitl
+estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count129
@@ -453,14 +445,11 @@ LaTeX Info: Redefining \nameref on input line 13.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 15.
 
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
-"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 15.
-
-("C:\Users\Daniele\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
-"
+("C:\Users\danie\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <acc_vs_dic.png, id=40, 462.528pt x 346.896pt>
@@ -473,35 +462,46 @@ File: pub_vs_class.png Graphic file (type png)
 <use pub_vs_class.png>
 Package pdftex.def Info: pub_vs_class.png  used on input line 27.
 (pdftex.def)             Requested size: 362.77264pt x 204.05286pt.
- [1
+[1
 
-{C:/Users/Daniele/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./acc_vs_
-dic.png> <./pub_vs_class.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
- [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
- (exam_assignment_Daniele_Gilio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
+{C:/Users/danie/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./acc_vs_di
+c.png> <./pub_vs_class.png>]
+<bayes_confmat.png, id=56, 462.528pt x 346.896pt>
+File: bayes_confmat.png Graphic file (type png)
+<use bayes_confmat.png>
+Package pdftex.def Info: bayes_confmat.png  used on input line 38.
+(pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+ [2 <./bayes_confmat.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
+
+(exam_assignment_Daniele_Gilio.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `exam_assignment_Daniele_Gilio.out' has not c
 hanged.
 (rerunfilecheck)             Checksum: ED3B0A218572CE4F8454318E078D6F67;587.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 7750 strings out of 492946
- 114135 string characters out of 3125378
- 231192 words of memory out of 3000000
- 11547 multiletter control sequences out of 15000+200000
+ 7739 strings out of 492946
+ 113765 string characters out of 3126266
+ 230784 words of memory out of 3000000
+ 11534 multiletter control sequences out of 15000+200000
  6895 words of font info for 27 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,6n,28p,885b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Daniele/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Users/Daniele/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr10.pfb><C:/Users/Daniele/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on exam_assignment_Daniele_Gilio.pdf (2 pages, 143462 bytes).
+<C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/danie/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on exam_assignment_Daniele_Gilio.pdf (2 pages, 178016 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 84 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,28 @@
+Naive Bayes Classifier
+Training Accuracy:  94.38
+Validation Accuracy:  89.2
+Test Accuracy:  91.10000000000001
+Naive Bayes Classifier Done
+
+
+Logistic Regression
+Training Accuracy:  76.92999999999999
+Validation Accuracy:  77.4
+Test Accuracy:  76.7
+Done with Logreg
+
+
+Single Layer Perceptron
+Final Training Accuracy:  98.82
+Final Validation Accuracy:  90.5
+Test Accuracy:  91.5
+Done with SLP
+
+
+Multi-Layer Perceptron
+Final Training Accuracy:  99.1
+Final Validation Accuracy:  90.4
+Test Accuracy:  92.9
+MLP Done
+
+
