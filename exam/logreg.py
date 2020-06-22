@@ -137,15 +137,32 @@ for i in range(len(test_pub_enc)):
 
 ######## Train a Multinomial Logistic Regression Model ###########
 print("Multinomial Logistic Regression")
-steps=20000
+steps=100000
 use_gpu=True
+keep_training=True
 if use_gpu==True:
     import gpu_multi_logreg as gml
     start=time.time()
-    w,b = gml.multinomial_logreg_train(x_train, y_train, 1e-5, lr=1e-2, steps=steps, x_val=x_val, y_val=y_val)
+    if keep_training==True:
+        steps=50000
+        data=np.load("logreg_"+str(size)+".npz", allow_pickle=True)
+        w_old=data["weights"]
+        b_old=data["biases"]
+        np.savez("logreg_old_"+str(size), weights=w_old, biases=b_old)
+        w,b = gml.multinomial_logreg_train(x_train, y_train, 1e-5, lr=1e-2, steps=steps, x_val=x_val, y_val=y_val, init_w=w_old, init_b=b_old)
+    else:
+        w,b = gml.multinomial_logreg_train(x_train, y_train, 1e-5, lr=1e-2, steps=steps, x_val=x_val, y_val=y_val)
 else:
     start=time.time()
-    w,b = pvml.multinomial_logreg_train(x_train, y_train, 1e-5, lr=1e-2, steps=steps)
+    if keep_training==True:
+        steps=10000
+        data=np.load("logreg_"+str(size)+".npz", allow_pickle=True)
+        w_old=data["weights"]
+        b_old=data["biases"]
+        np.savez("logreg_old_"+str(size), weights=w_old, biases=b_old)
+        w,b = gml.multinomial_logreg_train(x_train, y_train, 1e-5, lr=1e-2, steps=steps, init_w=w_old, init_b=b_old)
+    else:
+        w,b = pvml.multinomial_logreg_train(x_train, y_train, 1e-5, lr=1e-2, steps=steps)
 
 print("Total Time: ", time.time()-start)
 

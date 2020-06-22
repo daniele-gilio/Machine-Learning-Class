@@ -6,9 +6,9 @@ Naive Bayes Classifier Done
 
 
 Logistic Regression
-Training Accuracy:  76.92999999999999
-Validation Accuracy:  77.4
-Test Accuracy:  76.7
+Training Accuracy:  95.88
+Validation Accuracy:  90.3
+Test Accuracy:  90.8
 Done with Logreg
 
 

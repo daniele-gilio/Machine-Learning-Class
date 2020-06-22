@@ -112,25 +112,25 @@ def multinomial_logreg_train(X, Y, lambda_, lr=1e-3, steps=1000,
             grad_b = (P - H).mean(0)
             W -= lr * grad_W
             b -= lr * grad_b
-            P = multinomial_logreg_inference(X, W, b, convert=False)
-            labels=cp.argmax(P, axis=1)
-            acc=cp.array(labels==Y).mean()*100
-            train_accs.append(acc)
-            scores=multinomial_logreg_inference(x_val, W, b, convert=False)
-            labels=cp.argmax(scores, axis=1)
-            acc=cp.array(labels==y_val).mean()*100
-            val_accs.append(acc)
-            ep.append(step)
-            plt.clf()
-            plt.plot(ep, train_accs, label="Training")
-            plt.plot(ep, val_accs, label="Validation")
-            plt.grid(1)
-            plt.legend()
-            plt.pause(0.005)
-            plt.clf()
 
             if (step+1)%1000==0:
                 print("Step: ", step+1)
+                P = multinomial_logreg_inference(X, W, b, convert=False)
+                labels=cp.argmax(P, axis=1)
+                acc=cp.array(labels==Y).mean()*100
+                train_accs.append(acc)
+                scores=multinomial_logreg_inference(x_val, W, b, convert=False)
+                labels=cp.argmax(scores, axis=1)
+                acc=cp.array(labels==y_val).mean()*100
+                val_accs.append(acc)
+                ep.append(step)
+                plt.clf()
+                plt.plot(ep, train_accs, label="Training")
+                plt.plot(ep, val_accs, label="Validation")
+                plt.grid(1)
+                plt.legend()
+                plt.pause(0.005)
+                plt.clf()
 
         plt.ioff()
         plt.plot(ep, train_accs, label="Training")

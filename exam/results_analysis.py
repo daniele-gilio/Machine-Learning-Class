@@ -474,18 +474,18 @@ q.close()
 print("Creating Graphs...")
 ########### Accuracy vs. Training Time #############
 bayes_time=2.774
-logreg_time=912.641
+logreg_time=8896.687+903.904+4510.883+4509.015
 slp_time=338.017
 mlp_time=646.121
 _time=[bayes_time, logreg_time, slp_time, mlp_time]
 _acc=[b_acc, l_acc, s_acc, mlp_acc]
-sz=[100, 10000, 1500, 350] #number of epochs to train the models, the bayes number is arbitrary but smaller than
+sz=[100, 210000, 1500, 375] #number of epochs to train the models, the bayes number is arbitrary but smaller than
                             #all the others since it does not use Gradient Descent
 names=["Bayes", "LogReg", "SLP", "MLP"]
 plt.rcParams['figure.figsize'] = 16,9
 
 for i in range(4):
-    plt.scatter(_time[i], _acc[i], s=sz[i], label=names[i])
+    plt.scatter(_time[i], _acc[i], s=sz[i]/10, label=names[i])
 
 plt.legend(markerscale=0.18)
 plt.title("Accuracy Vs. Training Time")
