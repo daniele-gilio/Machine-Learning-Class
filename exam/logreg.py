@@ -155,7 +155,7 @@ if use_gpu==True:
 else:
     start=time.time()
     if keep_training==True:
-        steps=10000
+        steps=50000
         data=np.load("logreg_"+str(size)+".npz", allow_pickle=True)
         w_old=data["weights"]
         b_old=data["biases"]

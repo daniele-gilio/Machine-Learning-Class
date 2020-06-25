@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.27)  22 JUN 2020 15:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.27)  25 JUN 2020 10:40
 entering extended mode
 **./exam_assignment_Daniele_Gilio.tex
 (exam_assignment_Daniele_Gilio.tex
@@ -481,51 +481,51 @@ been already used, duplicate ignored
                    \relax 
 l.33 \section
              {Classifiers} [1 <./acc_vs_dic.png> <./pub_vs_class.png>]
-<bayes_confmat.png, id=61, 462.528pt x 346.896pt>
+<bayes_confmat.png, id=63, 462.528pt x 346.896pt>
 File: bayes_confmat.png Graphic file (type png)
 <use bayes_confmat.png>
 Package pdftex.def Info: bayes_confmat.png  used on input line 39.
 (pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
-<full_logreg_training.png, id=63, 2569.6pt x 481.8pt>
+<full_logreg_training.png, id=65, 2569.6pt x 481.8pt>
 File: full_logreg_training.png Graphic file (type png)
 <use full_logreg_training.png>
 Package pdftex.def Info: full_logreg_training.png  used on input line 47.
 (pdftex.def)             Requested size: 483.69687pt x 90.69016pt.
-<logreg_confmat.png, id=64, 462.528pt x 346.896pt>
+<logreg_confmat.png, id=66, 462.528pt x 346.896pt>
 File: logreg_confmat.png Graphic file (type png)
 <use logreg_confmat.png>
 Package pdftex.def Info: logreg_confmat.png  used on input line 54.
 (pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
-<slp_training.png, id=65, 462.528pt x 346.896pt>
+ [2 <./bayes_confmat.png>]
+<slp_training.png, id=80, 462.528pt x 346.896pt>
 File: slp_training.png Graphic file (type png)
 <use slp_training.png>
 Package pdftex.def Info: slp_training.png  used on input line 64.
 (pdftex.def)             Requested size: 217.66211pt x 163.24757pt.
-<slp_confmat.png, id=66, 462.528pt x 346.896pt>
+<slp_confmat.png, id=81, 462.528pt x 346.896pt>
 File: slp_confmat.png Graphic file (type png)
 <use slp_confmat.png>
 Package pdftex.def Info: slp_confmat.png  used on input line 70.
 (pdftex.def)             Requested size: 217.66211pt x 163.24757pt.
- [2 <./bayes_confmat.png>]
-<mlp_tests.png, id=80, 462.528pt x 346.896pt>
+ [3 <./full_logreg_training.png> <./logreg_confmat.png> <./slp_training.png> <.
+/slp_confmat.png>]
+<mlp_tests.png, id=97, 462.528pt x 346.896pt>
 File: mlp_tests.png Graphic file (type png)
 <use mlp_tests.png>
 Package pdftex.def Info: mlp_tests.png  used on input line 80.
 (pdftex.def)             Requested size: 241.84843pt x 181.38736pt.
-<mlp_training.png, id=81, 462.528pt x 346.896pt>
+<mlp_training.png, id=98, 462.528pt x 346.896pt>
 File: mlp_training.png Graphic file (type png)
 <use mlp_training.png>
 Package pdftex.def Info: mlp_training.png  used on input line 89.
 (pdftex.def)             Requested size: 217.66211pt x 163.24757pt.
-<mlp_confmat.png, id=82, 462.528pt x 346.896pt>
+<mlp_confmat.png, id=99, 462.528pt x 346.896pt>
 File: mlp_confmat.png Graphic file (type png)
 <use mlp_confmat.png>
 Package pdftex.def Info: mlp_confmat.png  used on input line 95.
 (pdftex.def)             Requested size: 217.66211pt x 163.24757pt.
- [3 <./full_logreg_training.png> <./logreg_confmat.png> <./slp_training.png> <.
-/slp_confmat.png>] [4 <./mlp_tests.png> <./mlp_training.png> <./mlp_confmat.png
->]
-<acc_vs_time.png, id=110, 462.528pt x 346.896pt>
+ [4 <./mlp_tests.png> <./mlp_training.png> <./mlp_confmat.png>]
+<acc_vs_time.png, id=114, 462.528pt x 346.896pt>
 File: acc_vs_time.png Graphic file (type png)
 <use acc_vs_time.png>
 Package pdftex.def Info: acc_vs_time.png  used on input line 107.
@@ -546,13 +546,13 @@ hanged.
 (rerunfilecheck)             Checksum: ED3B0A218572CE4F8454318E078D6F67;587.
  ) 
 Here is how much of TeX's memory you used:
- 7845 strings out of 492946
- 115623 string characters out of 3125378
- 236665 words of memory out of 3000000
+ 7846 strings out of 492946
+ 115634 string characters out of 3125378
+ 234717 words of memory out of 3000000
  11611 multiletter control sequences out of 15000+200000
  11541 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,28p,2300b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,8n,28p,2347b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Daniele/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/Daniele/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Daniele/AppData/Local/Programs/MiKTeX
@@ -568,9 +568,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Daniele/AppData/Local
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
 Users/Daniele/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti10.pfb>
-Output written on exam_assignment_Daniele_Gilio.pdf (6 pages, 504174 bytes).
+Output written on exam_assignment_Daniele_Gilio.pdf (6 pages, 507614 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
  128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

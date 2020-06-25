@@ -1,0 +1,22 @@
+Wrongest Classifications
+
+Title: 36 People Hospitalized at Avicii Concert in Boston after Suffering Medical Issues
+
+Correct Class: entertainment Predicted Class: health
+
+Title: Sector Update: Healthcare Shares Mixed Pre-Market; Pfizer Sinks 3% on Results  ...
+
+Correct Class: health Predicted Class: business
+
+Title: UPDATE 1-Twitter buys social data provider Gnip, stock soars
+
+Correct Class: science Predicted Class: business
+
+Title: Google ahead of Apple as most valuable brand
+
+Correct Class: business Predicted Class: science
+
+Title: Transformers: Age of Extinction Brings Giant Robot Dinosaurs and Even Bigger  ...
+
+Correct Class: entertainment Predicted Class: science
+

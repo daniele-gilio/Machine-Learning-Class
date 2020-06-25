@@ -1,0 +1,35 @@
+The files logreg.py, mlp.py, slp.py and naive_bayes.py are used to train the corresponding classifiers. The final parameters we used are hard coded so they are 
+already present in the files themselves. 
+
+For logreg.py there is an option to use the Gpu in the code, which imports the gpu_multi_logreg.py which is just the pvml multinomial logistic regression modified to
+use the cupy library. We will leave this option off by default for convenience, but it can be activated by putting the "use_gpu" variable as False. The code is also
+able to resume training if the "keep_training" variable is set to True. We will also leave this option off by default.
+
+Note that all the classifiers save their parameters at the end of training in npz files with names like classifier-name_dictionary-size.npz. If parameters are already
+present, they will be overwritten. In the case of logreg, mlp and slp they will also produce an image with the training data (accuracies vs epochs/steps plot).
+
+The file dictionary_functions.py is used to extract the features from the dataset and needs the file stopwords.txt in the same folder.
+
+The file stat_analysis.py creates the Publisher vs Class Heatmap shown in the report, based on the training set.
+
+The file results_analysis.py as produces everything used to evaluate the classifiers performance. It needs the weights of each classifier in order to work. It creates
+all the "wrong_#.txt" files and all the confusion matrices images. It also saves the final accuracies of each classifier in the file final_results.txt and creates the 
+most_polarizing.txt file, which contains the most influential words for the MLP classifier divided by publisher and class. It also contains some hard coded results,
+such as training times and accuracies as a function of dictionary size.
+
+If one wants to start from scratch, one should train all the classifiers, then use the results_analisys.py script. The stat_analysis.py can be used indipendently from
+training. 
+
+To reproduce the hardcoded results about accuracies vs. dictionary size present in the results_analysis.py one should take dictionary sizes of 1000,2500,5000
+,7500, 10000 without using word normalization techniques and train the SLP for 100-200 epochs and the LogReg for 1000-3000 steps. The training times are also harcoded
+and to reproduce them one can just run the slp.py, mlp.py and naive_bayes.py and substitute the times displayed at the end of each training. The logreg.py should be 
+trained for 210000 steps to reproduce our results since we did runs with 100000+10000+50000+50000 steps. The number of epochs/steps is also harcoded but it is the
+same used by default in the training scripts.
+
+We provided our final classifiers parameters in the "parameters" folders. If one wants to just run the results_analysis.py to obtain exactly our same results, one
+should copy the parameters in the scipt folder. We do this so if one tests the training code our parameters are not overwritten.
+
+We chose not to save the features on the disk since on our machine the feature creation on the fly is faster and does not take much time. We only save the dictionary
+for reference in the "voc" folder in the form "vocabulary_size.txt". Note that this file is corresponding to the last training, so if one runs the naive_bayes.py as
+the last script it would be the dictionary created by that script. They should be the same anyway since we used word normalization techniques for every classifier 
+and the dataset is the same for each of them.   
